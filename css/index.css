@@ -1,10 +1,24 @@
 #menu {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 40px;
+    padding: 35px;
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide-menu {
+    transition: transform 1s;
+    transform: translateY(-200px);
+}
+
+.show-menu {
+    transition: transform 1s;
+    transform: translateY(0px);
 }
 
 .nav {
@@ -47,7 +61,7 @@
 
 #background-img {
     width: 100%;
-    height: 100%;
+    height: auto;
     background: url("../imgs/background.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -56,7 +70,29 @@
 }
 
 body {
-    height: 2000px;
+    height: 150%;
 }
 
-#content
+#content-wrap{
+    height: 100%;
+    width: 100%;
+    padding: 12% 5% 5% 5%;
+}
+
+#content {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+#content *{
+    height: 100%;
+    width: 100%;
+}
+
+#footer {
+    height: 300px;
+    margin-top: -300px;
+    background-color: black;
+}

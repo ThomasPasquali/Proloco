@@ -5,6 +5,7 @@
     <script src="bootstrap-4.3.1/js/popper.min.js"></script>
     <script src="bootstrap-4.3.1/js/jquery-3.4.1.min.js"></script>
     <script src="bootstrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -18,11 +19,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Info</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="">Appartamenti</a>
+                        <a class="dropdown-item" href="appartamenti.html" target="_blank">Appartamenti</a>
                         <a class="dropdown-item" href="">Alberghi</a>
                         <a class="dropdown-item" href="">Rifugi</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Booo</a>
+                        <a class="dropdown-item" onclick="show('booo');">Booo</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -34,9 +35,15 @@
 
             </ul>
         </nav>
-        
-        <div id="content">
-        
+        <div id="content-wrap">
+            <div id="content">
+                
+                <div id="home">
+                </div>
+                
+                
+            </div>
+            <footer id="footer"></footer>
         </div>
     </div>
 </body>
