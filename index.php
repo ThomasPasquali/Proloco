@@ -37,13 +37,40 @@
         </nav>
         <div id="content-wrap">
             <div id="content">
-                
+
                 <div id="home">
                 </div>
-                
-                
+
+
             </div>
-            <footer id="footer"></footer>
+            <footer id="footer">
+              <div class="container" style="margin-top:auto;margin-bottom:auto;">
+                <div class="row">
+                  <div class="col-md-auto">
+                    <h3><img src="imgs/placeholder.svg" class="icon">Dove trovarci:</h3>
+                    <p>Canale d'Agordo</p>
+                    <p>Piazza Papa Luciani, Bo</p>
+                  </div>
+                  <div class="col-md-auto">
+                    <h3>Come contattarci:</h3>
+                    <p><img src="imgs/email.svg" class="icon">Email: Boo</p>
+                    <p><img src="imgs/telephone.svg" class="icon">Telefono: Boo</p>
+                  </div>
+                  <div class="col-md-auto">
+                    <h3><img src="imgs/info.svg" class="icon">Orari ufficio:</h3>
+                    <p>Sabato: <strong>9:00-12:00 e 15:00-18:00</strong></p>
+                    <p>Venerdì, domenica e festivi: <strong>9.00-12.00</strong></p>
+                  </div>
+                  <div class="col-md-auto">
+                    <h3>Social:</h3>
+                    <div style="display: inline-flex;">
+                      <img src="imgs/facebook.svg" class="icon">
+                      <img src="imgs/instagram.svg" class="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
         </div>
     </div>
 </body>

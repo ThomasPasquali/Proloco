@@ -30,8 +30,8 @@
     color: white;
     font-size: 170%;
     font-weight: bold;
-    -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: black; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 #title {
@@ -41,8 +41,8 @@
 #title *{
     color: white;
     display: inline-flex;
-    -webkit-text-stroke-width: 1px; 
-    -webkit-text-stroke-color: black; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 #title img {
@@ -62,15 +62,15 @@
 #background-img {
     width: 100%;
     height: auto;
-    background: url("../imgs/background.jpg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url("../imgs/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
-    height: 150%;
+    height: 200%;
 }
 
 #content-wrap{
@@ -92,7 +92,22 @@ body {
 }
 
 #footer {
-    height: 300px;
-    margin-top: -300px;
-    background-color: black;
+    padding: 20px;
+    height: 200px;
+    margin-top: -200px;
+    background-color: #252525;
+    color: white;
+    font-size: 1.1em;
+}
+
+#footer h3{
+  text-decoration: underline;
+  white-space: pre;
+}
+
+.icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  max-width: 30px;
 }
