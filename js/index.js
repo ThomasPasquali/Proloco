@@ -21,17 +21,16 @@ $(document).ready(function () {
 
 });
 
-var content = $('#content');
-
 function show(what='') {
-    switch(what) {
+	switch(what) {
         case '':
             break;
 
         default:
-            content.children().each(function(){ $(this).addClass('hidden'); });
-            if($('#'+what)) $('#'+what).removeClass('hidden');
-            else $('#home').removeClass('hidden');
+        	if($('#'+what)) {
+        		$('#content').children().each(function(){ $(this).css('display', 'none'); });
+                $('#'+what).css('display', 'block');
+        	}
             break;
     }
 }
