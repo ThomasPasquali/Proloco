@@ -3,11 +3,11 @@ if(isset($_REQUEST['search'])) {
 	include_once 'lib/db.php';
 	ini_set('display_errors', 0);
 	try {
-		$db = new DB(__DIR__.'\..\db.ini');
+		$db = new DB(__DIR__.'/../db.ini');
 	} catch (Exception $e) {
 		header('Content-type: text/txt;');
 		echo
-		'Specificare il file ini per il database in: __DIR__.\'\\..\\db.ini
+		'Specificare il file ini per il database in: __DIR__.\'/../db.ini
 Esempio:
 db = mysql
 host = 127.0.0.1
