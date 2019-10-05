@@ -148,7 +148,8 @@ pass = root';
           <?php
            foreach($results as $res){ ?>
             <div class="result">
-              
+              <img src="imgs/dbImgs/<?= $res['Foto'] ?>">
+							<h1><?= $res['Nome'] ?></h1>
             </div>
            <?php } ?>
            </pre>
