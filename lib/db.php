@@ -58,4 +58,11 @@
                         $arr[$key] = iconv(mb_detect_encoding($value, mb_detect_order(), true), $newEnc, $value);
             return $arr;
         }
+
+        public static function check($keys, $arr){
+            foreach ($keys as $key)
+                if(!(isset($arr[$key]) && ($arr[$key] == 0 || !empty($arr[$key]))))
+                    return false;
+            return true;
+        }
     }

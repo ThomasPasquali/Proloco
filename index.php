@@ -1,6 +1,6 @@
 <?php
-if(isset($_REQUEST['search'])) {
-	include_once 'lib/db.php';
+include_once 'lib/db.php';
+if(DB::check(['cat', 'search'], $_REQUEST)) {
 	ini_set('display_errors', 0);
 	try {
 		$db = new DB(__DIR__.'/../db.ini');
@@ -17,10 +17,17 @@ user = root
 pass = root';
 		exit();
 	}
-	
+
 	//print_r($_REQUEST);
+
 	//TODO
-	$search = [];
+	try {
+		if(in_array($_REQUEST['cat'], ['alloggi', 'luoghi'])){
+
+			$results = $db->ql("SELECT * FROM $_REQUEST[cat]");
+
+		}
+	} catch (Exception $e) {}
 }
 ?>
 <html>
@@ -42,28 +49,28 @@ pass = root';
                 <h1 onclick="show('home');">Proloco<br>Canale d'Agordo</h1>
             </div>
             <ul class="nav justify-content-end">
-            
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Alloggi</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="?cat=Alloggi&search=Garn%C3%AC,B%26B">Garn&igrave; e B&amp;B</a>
-                        <a class="dropdown-item" href="?cat=Alloggi&search=Albergo,Hotel">Alberghi e Hotel</a>
+                        <a class="dropdown-item" href="?cat=alloggi&search=Garn%C3%AC,B%26B">Garn&igrave; e B&amp;B</a>
+                        <a class="dropdown-item" href="?cat=alloggi&search=Albergo,Hotel">Alberghi e Hotel</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="files/appartamenti.pdf" target="_blank">Appartamenti</a>
                     </div>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Cosa vedere</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#" onclick="show('v-d-g');">Valle di Gares - Biotopo</a>
                         <a class="dropdown-item" href="#" onclick="show('v-d-b');">Valle del Biois</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="?cat=Luoghi&search=Mostra,Museo">Mostre e musei</a>
-                        <a class="dropdown-item" href="?cat=Luoghi&search=Biblioteca">Biblioteche</a>
+                        <a class="dropdown-item" href="?cat=luoghi&search=Mostra,Museo">Mostre e musei</a>
+                        <a class="dropdown-item" href="?cat=luoghi&search=Biblioteca">Biblioteche</a>
                     </div>
                 </li>
-                
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Eventi</a>
                     <div class="dropdown-menu">
@@ -73,7 +80,7 @@ pass = root';
                         <a class="dropdown-item" href="http://www.zinghenesta.it" target="_blank">Zinghenesta</a>
                     </div>
                 </li>
-                
+
                 <li class="nav-item">
                     <a class="nav-link" href="#" onclick="show('come-arrivare');">Come arrivare</a>
                 </li>
@@ -84,39 +91,39 @@ pass = root';
             <div id="content">
 
                 <div id="home">
-                
+
                 	<div id="estate"></div>
                 	<div id="inverno"></div>
-                
+
                 	<div id="slideshow">
 	                	<!-- Slideshow container -->
 						<div class="slideshow-container">
-						
+
 						  <!-- Full-width images with number and caption text -->
 						  <div class="mySlides fade">
 						    <div class="numbertext">1 / 3</div>
 						    <img src="imgs/slider/aurora.jpg" style="width:100%">
 						    <div class="text">Caption Text</div>
 						  </div>
-						
+
 						  <div class="mySlides fade">
 						    <div class="numbertext">2 / 3</div>
 						    <img src="imgs/slider/ghiaccio.jpg" style="width:100%">
 						    <div class="text">Caption Two</div>
 						  </div>
-						
+
 						  <div class="mySlides fade">
 						    <div class="numbertext">3 / 3</div>
 						    <img src="imgs/slider/universo.jpg" style="width:100%">
 						    <div class="text">Caption Three</div>
 						  </div>
-						
+
 						  <!-- Next and previous buttons -->
 						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 						</div>
 						<br>
-						
+
 						<!-- The dots/circles -->
 						<div style="text-align:center">
 						  <span class="dot" onclick="currentSlide(1)"></span>
@@ -124,21 +131,29 @@ pass = root';
 						  <span class="dot" onclick="currentSlide(3)"></span>
 						</div>
 					</div>
-					
+
                 </div>
-				
+
 				<div id="v-d-g" class="hidden">
 					<h1>Valle di Gares</h1>
 				</div>
-				
+
 				<div id="v-d-b" class="hidden">
 					<h1>Valle del Biois</h1>
 				</div>
-				
+
 				<div id="search" class="hidden">
 					<h1>Ricerca</h1>
+					<pre>
+          <?php
+           foreach($results as $res){ ?>
+            <div class="result">
+              
+            </div>
+           <?php } ?>
+           </pre>
 				</div>
-				
+
 				<div id="come-arrivare" class="hidden">
 					<div id="map">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.9631544335696!2d11.913474742799066!3d46.36102078420485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778453599d4a887%3A0x2c95c73b5c456247!2sMuseo%20Albino%20Luciani%20Canale%20d&#39;Agordo!5e0!3m2!1sit!2sit!4v1569776504349!5m2!1sit!2sit"></iframe>
@@ -166,7 +181,9 @@ pass = root';
                     <p>Venerd&igrave;, Domenica e festivi: 9.00-12.00</p>
                   </div>
                   <div class="col-sm">
-                    <h4>Social:</h4>
+                    <h4>Link:</h4>
+                    <p><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank">Meteo</a></p>
+                    <p><a href="https://www.musal.it/webcam/" target="_blank">Webcam</a></p>
                     <a href="https://www.facebook.com/Pro-Loco-Canale-dAgordo-653270708142524" target="_blank"><img src="imgs/facebook.svg" class="icon"></a>
                   </div>
                 </div>
@@ -174,7 +191,7 @@ pass = root';
             </footer>
         </div>
     </div>
-    <?= isset($search)?'<script>show(\'search\');</script>':'' ?>
+    <?= isset($results)?'<script>show(\'search\');</script>':'' ?>
     <script src="js/slider.js"></script>
 </body>
 </html>
