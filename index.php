@@ -24,7 +24,8 @@ pass = root';
 	try {
 		if(in_array($_REQUEST['cat'], ['alloggi', 'luoghi'])){
 
-			$results = $db->ql("SELECT * FROM $_REQUEST[cat]");
+      $types = explode(',', $_REQUEST['search']);
+			$results = $db->ql("SELECT * FROM $_REQUEST[cat] WHERE Tipo IN (?".str_repeat(',?', count($types)-1).')', $types);
 
 		}
 	} catch (Exception $e) {}
@@ -134,35 +135,53 @@ pass = root';
 
                 </div>
 
-				<div id="v-d-g" class="hidden">
-					<h1>Valle di Gares</h1>
-				</div>
+          <div id="v-d-g" class="hidden">
+            <h1>Valle di Gares</h1>
+          </div>
 
-				<div id="v-d-b" class="hidden">
-					<h1>Valle del Biois</h1>
-				</div>
+          <div id="v-d-b" class="hidden">
+            <h1>Valle del Biois</h1>
+          </div>
 
-				<div id="search" class="hidden">
-					<h1>Ricerca</h1>
-					<pre>
-          <?php
-           foreach($results as $res){ ?>
-            <div class="result">
+          <div id="search" class="hidden">
+            <div class="resultBox">
+
+            <?php
+            foreach($results as $res){ ?>
               
-            </div>
-           <?php } ?>
-           </pre>
-				</div>
+              <div class="result">
 
-				<div id="come-arrivare" class="hidden">
-					<div id="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.9631544335696!2d11.913474742799066!3d46.36102078420485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778453599d4a887%3A0x2c95c73b5c456247!2sMuseo%20Albino%20Luciani%20Canale%20d&#39;Agordo!5e0!3m2!1sit!2sit!4v1569776504349!5m2!1sit!2sit"></iframe>
-					</div>
-					<h2><a href="https://dolomitibus.it/files/orari/invernali/extra/Agordino/Linea2_I.pdf" target="_blank">Orari Dolomitibus</a></h2>
-				</div>
+                <div class="grid-2-cols">
+                  <div>
+                    <h2><?= $res['Nome'] ?></h2>
+                    <?= $res['Descrizione']?"<p class=\"descrizione\">$res[Descrizione]</p>":'' ?>
 
+                    <?php if($res['Sito']||$res['Maps']) { ?>
+                    <div class="grid-2-cols">
+                      <?= $res['Sito']?"<p class=\"sito\"><a href=\"$res[Sito]\">Sito</a></p>":'' ?>
+                      <?= $res['Maps']?"<p class=\"mappa\"><a href=\"$res[Maps]\">Come arrivarci</a></p>":'' ?>
+                    </div>
+                    <?php } ?>
+                  </div>
+
+                  <?= $res['Foto']?"<img src=\"imgs/dbImgs/$res[Foto]\">":'' ?>
+                </div>
+
+              </div>
+            <?php } ?>
             </div>
-            <footer id="footer">
+            </div>
+
+            <div id="come-arrivare" class="hidden">
+              <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.9631544335696!2d11.913474742799066!3d46.36102078420485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778453599d4a887%3A0x2c95c73b5c456247!2sMuseo%20Albino%20Luciani%20Canale%20d&#39;Agordo!5e0!3m2!1sit!2sit!4v1569776504349!5m2!1sit!2sit"></iframe>
+              </div>
+              <h2><a href="https://dolomitibus.it/files/orari/invernali/extra/Agordino/Linea2_I.pdf" target="_blank">Orari Dolomitibus</a></h2>
+            </div>
+
+				  </div>
+        
+        <footer id="footer">
               <div class="container" style="margin-top:auto;margin-bottom:auto;">
                 <div class="row">
                   <div class="col-sm">
@@ -189,7 +208,9 @@ pass = root';
                 </div>
               </div>
             </footer>
-        </div>
+
+          </div>  
+      </div>  
     </div>
     <?= isset($results)?'<script>show(\'search\');</script>':'' ?>
     <script src="js/slider.js"></script>

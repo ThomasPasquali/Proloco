@@ -20,7 +20,7 @@
 
                 $righe_estratte = [];
                 while ($riga = $stmt->fetch($fetchType))
-                    $righe_estratte[] = $this->changeEncoding($riga);
+                    $righe_estratte[] = $riga;
 
                 $this->commit();
                 return $righe_estratte;
@@ -41,7 +41,7 @@
             try {
                 $this->beginTransaction();
                 $stmt = $this->prepare($sql);
-                $stmt->execute($this->changeEncoding($params));
+                $stmt->execute($params);
                 $this->lastErrorInfo = $stmt->errorInfo();
                 $this->commit();
                 return $stmt;
@@ -51,13 +51,13 @@
             }
         }
 
-        public function changeEncoding($arr, $newEnc = 'UTF-8') {
+        /*public function changeEncoding($arr, $newEnc = 'UTF-8') {
             if($arr != NULL)
                 foreach ($arr as $key => $value)
                     if($value != NULL)
                         $arr[$key] = iconv(mb_detect_encoding($value, mb_detect_order(), true), $newEnc, $value);
             return $arr;
-        }
+        }*/
 
         public static function check($keys, $arr){
             foreach ($keys as $key)
