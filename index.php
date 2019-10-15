@@ -1,6 +1,6 @@
 <?php
 include_once 'lib/db.php';
-if(DB::check(['cat', 'search'], $_REQUEST)) {
+if(DB::check(['search'], $_REQUEST)) {
 	ini_set('display_errors', 0);
 	try {
 		$db = new DB(__DIR__.'/../db.ini');
@@ -21,16 +21,10 @@ pass = root';
 	//print_r($_REQUEST);
 
 	//TODO
-	try {
-		if(in_array($_REQUEST['cat'], ['alloggi', 'luoghi'])){
+  $types = explode(',', $_REQUEST['search']);
+  $results = $db->ql("SELECT * FROM strutture WHERE Tipo IN (?".str_repeat(',?', count($types)-1).')', $types);
 
-      $types = explode(',', $_REQUEST['search']);
-			$results = $db->ql("SELECT * FROM $_REQUEST[cat] WHERE Tipo IN (?".str_repeat(',?', count($types)-1).')', $types);
-
-		}
-	} catch (Exception $e) {}
-}
-?>
+}?>
 <html>
 <head>
     <title>Proloco Canale d'Agordo</title>
@@ -56,8 +50,8 @@ pass = root';
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">Alloggi</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="?cat=alloggi&search=Garn%C3%AC,B%26B">Garn&igrave; e B&amp;B</a>
-                        <a class="dropdown-item" href="?cat=alloggi&search=Albergo,Hotel">Alberghi e Hotel</a>
+                        <a class="dropdown-item" href="?search=Garn%C3%AC,B%26B">Garn&igrave; e B&amp;B</a>
+                        <a class="dropdown-item" href="?search=Albergo,Hotel">Alberghi e Hotel</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="files/appartamenti.pdf" target="_blank">Appartamenti</a>
                     </div>
@@ -69,8 +63,8 @@ pass = root';
                         <a class="dropdown-item" href="#" onclick="show('v-d-g');">Valle di Gares - Biotopo</a>
                         <a class="dropdown-item" href="#" onclick="show('v-d-b');">Valle del Biois</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="?cat=luoghi&search=Mostra,Museo">Mostre e musei</a>
-                        <a class="dropdown-item" href="?cat=luoghi&search=Biblioteca">Biblioteche</a>
+                        <a class="dropdown-item" href="?search=Mostra,Museo">Mostre e musei</a>
+                        <a class="dropdown-item" href="?search=Biblioteca">Biblioteche</a>
                     </div>
                 </li>
 
@@ -243,33 +237,31 @@ pass = root';
           </div>
 
           <div id="search" class="hidden">
+            <!-- #region Ricerca -->
             <div class="resultBox">
-
             <?php
+            if(count($results) == 0) echo '<h1 style="color:white;">Nessun risultato</h1>';
+
             foreach($results as $res){ ?>
               
               <div class="result">
+                <h2><?= $res['Nome'] ?></h2>
+                <?= $res['Foto']?"<img src=\"imgs/dbImgs/$res[Foto]\">":'' ?>
+                <?= $res['Descrizione']?"<p class=\"descrizione\">$res[Descrizione]</p>":'' ?>
 
-                <div class="grid-2-cols">
-                  <div>
-                    <h2><?= $res['Nome'] ?></h2>
-                    <?= $res['Descrizione']?"<p class=\"descrizione\">$res[Descrizione]</p>":'' ?>
-
-                    <?php if($res['Sito']||$res['Maps']) { ?>
-                    <div class="grid-2-cols">
-                      <?= $res['Sito']?"<p class=\"sito\"><a href=\"$res[Sito]\">Sito</a></p>":'' ?>
-                      <?= $res['Maps']?"<p class=\"mappa\"><a href=\"$res[Maps]\">Come arrivarci</a></p>":'' ?>
-                    </div>
-                    <?php } ?>
-                  </div>
-
-                  <?= $res['Foto']?"<img src=\"imgs/dbImgs/$res[Foto]\">":'' ?>
+                <?php if($res['Sito']||$res['Maps']||$res['Email']) { ?>
+                <div class="inline-grid">
+                  <?= $res['Sito']?"<p class=\"sito\"><a href=\"$res[Sito]\">Sito</a></p>":'' ?>
+                  <?= $res['Maps']?"<p class=\"mappa\"><a href=\"$res[Maps]\">Come arrivarci</a></p>":'' ?>
+                  <?= $res['Email']?"<p class=\"mappa\"><a href=\"mailto:$res[Email]\">Email</a></p>":'' ?>
                 </div>
-
+                <?php } ?>
+                  
               </div>
             <?php } ?>
             </div>
-            </div>
+            <!-- #endregion Ricerca End -->
+          </div>
 
             <div id="come-arrivare" class="hidden">
               <div id="map">
