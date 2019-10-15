@@ -39,6 +39,8 @@ pass = root';
     <script src="bootstrap-4.3.1/js/jquery-3.4.1.min.js"></script>
     <script src="bootstrap-4.3.1/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    <script src="js/slider.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slider.css">
 </head>
@@ -92,55 +94,152 @@ pass = root';
             <div id="content">
 
                 <div id="home">
-
-                	<div id="estate"></div>
-                	<div id="inverno"></div>
-
-                	<div id="slideshow">
-	                	<!-- Slideshow container -->
-						<div class="slideshow-container">
-
-						  <!-- Full-width images with number and caption text -->
-						  <div class="mySlides fade">
-						    <div class="numbertext">1 / 3</div>
-						    <img src="imgs/slider/aurora.jpg" style="width:100%">
-						    <div class="text">Caption Text</div>
-						  </div>
-
-						  <div class="mySlides fade">
-						    <div class="numbertext">2 / 3</div>
-						    <img src="imgs/slider/ghiaccio.jpg" style="width:100%">
-						    <div class="text">Caption Two</div>
-						  </div>
-
-						  <div class="mySlides fade">
-						    <div class="numbertext">3 / 3</div>
-						    <img src="imgs/slider/universo.jpg" style="width:100%">
-						    <div class="text">Caption Three</div>
-						  </div>
-
-						  <!-- Next and previous buttons -->
-						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-						</div>
-						<br>
-
-						<!-- The dots/circles -->
-						<div style="text-align:center">
-						  <span class="dot" onclick="currentSlide(1)"></span>
-						  <span class="dot" onclick="currentSlide(2)"></span>
-						  <span class="dot" onclick="currentSlide(3)"></span>
-						</div>
-					</div>
+                  <h1>Il paese</h1>
+                  <p>
+                    Canale d'Agordo, Forno di Canale fino al 1964 è uno dei paesi che compongono la Valle del Biois, in Agordino, a circa 50 km da Belluno.
+                  </p>
+                  <p>
+                    Il paese è ampliamente noto in quanto paese natale di <a target="_blank" href="https://it.wikipedia.org/wiki/Papa_Giovanni_Paolo_I">Albino Luciani (papa Giovanni Paolo I)</a>, oltre che del paesaggista Giuseppe Zais e del poeta Valerio Da Pos.
+                  </p>
+                  <p>
+                    Circondato da imponenti vette dolomitiche quali il Civetta, il Pelmo, le Pale di San Martino, le Pale di San Lucano, le Cime d'Auta e la Marmolada confina con il Trentino attraverso la splendida Valle di Gares. E l'Altipiano delle Comelle.
+                  </p>
+                  <p>
+                    Canale d'Agordo vanta ben 4 frazioni alte: Gares, Fregona, Feder, Carfon, dove il patrimonio rurale ed edilizio ha tutt'ora mantenuto viva la tipicità dei tabiai di montagna e la tradizione dello sfalcio e della cura del territorio.
+                  </p>
+                  <!-- #region Jssor Slider Start -->
+                  <div id="jssor_home" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
+                    </div>
+                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
+                        <div><img data-u="image" src="imgs/background.jpg" /> </div>
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                        </svg>
+                    </div>
+                  </div>
+                  <!-- #endregion Jssor Slider End -->
 
                 </div>
 
           <div id="v-d-g" class="hidden">
             <h1>Valle di Gares</h1>
+            <p>
+              La Valle di Gares è una valle di origine glaciale che si estende per ben 7 km dal capoluogo di Canale d'Agordo in  direzione delle Pale di San Martino.
+            </p>
+            <p>
+              Meta di escursionismo e frequente visita da parte dei turisti  e non che soggiornano in Valle del Biois, si presta alle più svariate tipologie di pratica sportiva : dalla mountain bike, allo skiroll, dal nordic walking agli sport prettamente invernali come lo sci di fondo e l'arrampicata su ghiaccio.
+            </p>
+            <p>
+              Al termine della Valle, chiusa dalla catena delle Pale di San Martino, sono ben visibili e facilmente accessibili le cascate delle Comelle e diversi rifugi.
+            </p>
+            <p>
+              Qui sorsero tra il 1450 ed il 1748 le miniere del Sass  Negher, dalle quali venivano estratti principalmente rame e ferro. 
+              Il nome “Forno di Canale” fu, infatti, attribuito al Paese per la sua importanza come centro minerario e siderurgico dell’ Agordino.
+            </p>
+            <h1>Biotopo</h1>
+            <p>
+              In località Pian de Giare (1381 m slm), è possibile passeggiare in prossimità del Laghetto di Gares. Questo lago è presente dal disgelo fino all'inizio della stagione invernale ed offre condizioni idonee per lo sviluppo di comunità idrofitiche, opportunità per la riproduzione degli anfibi e per il nutrimento di altre specie.
+            </p>
+            <p>
+              Un'ambiente che è espressione di un insieme di realtà vegetazionali e faunistiche insediate all'interno di spazi ed ambienti molto vari ed armoniosamente collegati fra di loro: la sorgente, il lago, il torrente, i boschi di conifere, il prato....
+            </p>
+            <!-- #region Jssor Slider Start -->
+            <div id="jssor_v_d_g" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
+              <!-- Loading Screen -->
+              <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
+              </div>
+              <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
+                  <div><img data-u="image" src="imgs/slider/aurora.jpg" /> </div>
+                  <div><img data-u="image" src="imgs/slider/universo.jpg" /> </div>
+              </div>
+              <!-- Bullet Navigator -->
+              <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                  <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                      <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                          <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                      </svg>
+                  </div>
+              </div>
+              <!-- Arrow Navigator -->
+              <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                  </svg>
+              </div>
+              <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                  </svg>
+              </div>
+            </div>
+            <!-- #endregion Jssor Slider End -->
           </div>
 
           <div id="v-d-b" class="hidden">
             <h1>Valle del Biois</h1>
+            <p>
+              La Valle del Biois, che si estende per 20 km dal Passo San Pellegrino fino a alla confluenza con il torrente Cordevole, comprende i Comuni di Falcade, Canale d'Agordo, Vallada Agordina e Cencenighe Agordino.
+            </p>
+            <p>
+              Confina con la provincia autonoma di Trento e deve il suo nome al torrente Biois, che ha le proprie sorgenti al Passo di San Pellegrino (Moena).
+              La Valle del Biois, nota anche con l'appellativo di  “Valle coi Santi alle Finestre”, è ricca di storia e cultura, di personalità di rilievo in tutti in campi, dalla religione alla medicina, dall'arte allo sport e può vantare un patrimonio naturalistico riconosciuto a livello mondiale dall'UNESCO. I panorami che questi luoghi regalano al visitatore sono, infatti, di straordinaria ed unica bellezza.
+              Falcade è il centro sportivo per eccellenza con gli impianti che da località Molino permettono di accedere ai collegamenti sciistici del Comprensorio della Ski Area San Pellegrino, con ben 60 km di piste.
+            </p>
+            <p>
+              Canale d'Agordo, assieme a Vallada Agordina, è il centro culturale della Vallata e, in località Gares può vantare anche un circuito di piste da fondo.
+              Cencenighe rappresenta il crocevia dei collegamenti tra la Valle del Biois e la Val Cordevole con il resto dell'Agordino e del Bellunese.
+            </p>
+            <!-- #region Jssor Slider Start -->
+            <div id="jssor_v_d_b" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
+              <!-- Loading Screen -->
+              <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
+              </div>
+              <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
+                  <div><img data-u="image" src="imgs/slider/aurora.jpg" /> </div>
+                  <div><img data-u="image" src="imgs/slider/universo.jpg" /> </div>
+              </div>
+              <!-- Bullet Navigator -->
+              <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                  <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                      <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                          <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                      </svg>
+                  </div>
+              </div>
+              <!-- Arrow Navigator -->
+              <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                  </svg>
+              </div>
+              <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                      <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                  </svg>
+              </div>
+            </div>
+            <!-- #endregion Jssor Slider End -->
           </div>
 
           <div id="search" class="hidden">
@@ -180,8 +279,9 @@ pass = root';
             </div>
 
 				  </div>
-        
-        <footer id="footer">
+          </div>  
+
+          <footer id="footer">
               <div class="container" style="margin-top:auto;margin-bottom:auto;">
                 <div class="row">
                   <div class="col-sm">
@@ -196,8 +296,8 @@ pass = root';
                   </div>
                   <div class="col-sm">
                     <h4>Orari ufficio:<img src="imgs/info.svg" class="icon"></h4>
-                    <p>Sabato: 9:00-12:00 e 15:00-18:00</p>
-                    <p>Venerd&igrave;, Domenica e festivi: 9.00-12.00</p>
+                    <p>Sabato<br>9:00-12:00 e 15:00-18:00</p>
+                    <p>Venerd&igrave;, Domenica e festivi:<br>9.00-12.00</p>
                   </div>
                   <div class="col-sm">
                     <h4>Link:</h4>
@@ -208,8 +308,6 @@ pass = root';
                 </div>
               </div>
             </footer>
-
-          </div>  
       </div>  
     </div>
     <?= isset($results)?'<script>show(\'search\');</script>':'' ?>

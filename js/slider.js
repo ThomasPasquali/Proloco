@@ -1,41 +1,49 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+jQuery(document).ready(function ($) {
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  var jssor_options = {
+    $AutoPlay: 1,
+    $SlideshowOptions: {
+      $Class: $JssorSlideshowRunner$,
+      $Transitions: [ {$Duration:800,$Opacity:2} ],
+      $TransitionsOrder: 1
+    },
+    $ArrowNavigatorOptions: {
+      $Class: $JssorArrowNavigator$
+    },
+    $BulletNavigatorOptions: {
+      $Class: $JssorBulletNavigator$
+    }
+  };
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  var jssor_v_d_b = new $JssorSlider$("jssor_v_d_b", jssor_options);
+  var jssor_home = new $JssorSlider$("jssor_home", jssor_options);
+  var jssor_v_d_g = new $JssorSlider$("jssor_v_d_g", jssor_options);
+  
+});
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++)
-      slides[i].style.display = "none";
-  for (i = 0; i < dots.length; i++)
-      dots[i].className = dots[i].className.replace(" active", "");
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-/*
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+/*#region responsive code begin
+
+  var MAX_WIDTH = 700;
+
+  function ScaleSlider() {
+      var containerElement = jssor_1_slider.$Elmt.parentNode;
+      var containerWidth = containerElement.clientWidth;
+
+      if (containerWidth) {
+
+          var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+          jssor_1_slider.$ScaleWidth(expectedWidth);
+      }
+      else {
+          window.setTimeout(ScaleSlider, 30);
+      }
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}*/
+
+  ScaleSlider();
+
+  $(window).bind("load", ScaleSlider);
+  $(window).bind("resize", ScaleSlider);
+  $(window).bind("orientationchange", ScaleSlider);
+  /*#endregion responsive code end*/
