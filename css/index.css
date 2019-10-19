@@ -202,3 +202,17 @@
     padding: 0;
     margin: 10px;
 }
+
+#link_trasporti {
+    background-color: rgba(255,255,255,0.75);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link_trasporti *{
+    color: black;
+    margin: 0 10px 0 10px;
+}

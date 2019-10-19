@@ -286,10 +286,27 @@
           </div>
 
             <div id="come-arrivare" class="hidden">
+
               <div id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1946.9631544335696!2d11.913474742799066!3d46.36102078420485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4778453599d4a887%3A0x2c95c73b5c456247!2sMuseo%20Albino%20Luciani%20Canale%20d&#39;Agordo!5e0!3m2!1sit!2sit!4v1569776504349!5m2!1sit!2sit"></iframe>
               </div>
-              <h2><a href="https://dolomitibus.it/files/orari/invernali/extra/Agordino/Linea2_I.pdf" target="_blank"><?= $lang['orari_dolomitibus'] ?></a></h2>
+
+              <div id="link_trasporti">
+                <h2 data-toggle="tooltip" data-placement="bottom" title="<?= $lang['provincia_di_Belluno'] ?>">
+                  <a href="https://dolomitibus.it/files/orari/invernali/extra/Agordino/Linea2_I.pdf" target="_blank">
+                    <?= $lang['orari_dolomitibus'] ?>
+                  </a>
+                </h2>
+
+                <h2 data-toggle="tooltip" data-placement="bottom" title="<?= $lang['fino_a_Belluno'] ?>">
+                  <a href="https://www.trenitalia.com" target="_blank">
+                    <?= $lang['orari_trenitalia'] ?>
+                  </a>
+                </h2>
+
+                <h2><a href="files/taxi.pdf" target="_blank"><?= $lang['trasporti_privati'] ?></a></h2>
+              </div>
+
             </div>
 
 				  </div>
