@@ -97,6 +97,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#" onclick="show('v-d-g');">Valle di Gares - Biotopo</a>
                         <a class="dropdown-item" href="#" onclick="show('v-d-b');">Valle del Biois</a>
+                        <a class="dropdown-item" href="#" onclick="show('via-crucis');">Via Crucis Papa Luciani</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="?search=Mostra,Museo"><?= $lang['menu_cosa_vedere_mostre_musei'] ?></a>
                         <a class="dropdown-item" href="?search=Biblioteca"><?= $lang['menu_cosa_vedere_biblioteche'] ?></a>
@@ -256,6 +257,12 @@
               </div>
             </div>
             <!-- #endregion Jssor Slider End -->
+          </div>
+          
+          <div id="via-crucis">
+          	<h1>Via Crucis Papa Luciani</h1>
+            <p><?= $lang['via_crucis_p1'] ?></p>
+            <p><?= $lang['via_crucis_p2'] ?></p>
           </div>
 
           <div id="search" class="hidden">

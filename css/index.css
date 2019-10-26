@@ -186,18 +186,18 @@
     grid-template-columns: auto auto;
 }
 
-#v-d-b, #v-d-g, #home {
+#v-d-b, #v-d-g, #home, #via-crucis {
     background-color: rgba(255,255,255,0.75);
     border-radius: 5%;
     white-space: pre-line;
     padding: 0 5% 0 5%;
 }
 
-#v-d-b h1, #v-d-g h1, #home h1 {
+#v-d-b h1, #v-d-g h1, #home h1, #via-crucis h1{
     margin-top: 30px;
 }
 
-#v-d-b p, #v-d-g p, #home p {
+#v-d-b p, #v-d-g p, #home p, #via-crucis p {
     font-size: 1.3em;
     padding: 0;
     margin: 10px;
