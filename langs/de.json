@@ -1,0 +1,53 @@
+{
+    "menu_lang" : "Sprache",
+    "menu_alloggi" : "Alloggi",
+    "menu_alloggi_hotel" : "Hotel e Alberghi",
+    "menu_alloggi_appartamenti" : "Appartamenti",
+    "menu_eventi" : "Eventi",
+    "menu_cosa_vedere" : "Cosa vedere",
+    "menu_cosa_vedere_negozi" : "Negozi",
+    "menu_cosa_vedere_locali" : "Locali",
+    "menu_cosa_vedere_mostre_musei" : "Mostre e musei",
+    "menu_cosa_vedere_biblioteche" : "Biblioteche",
+    "menu_cosa_vedere_eventi" : "Eventi",
+    "menu_cosa_vedere_eventi_in_zona" : "Eventi in zona",
+    "menu_come_arrivare" : "Come arrivare",
+
+    "home_title" : "Il paese",
+    "home_p1" : "Canale d'Agordo, Forno di Canale fino al 1964 &egrave; uno dei paesi che compongono la Valle del Biois, in Agordino, a circa 50 km da Belluno.",
+    "home_p2" : "Il paese &egrave; ampliamente noto in quanto paese natale di <a target=\"_blank\" href=\"https://it.wikipedia.org/wiki/Papa_Giovanni_Paolo_I\">Albino Luciani (papa Giovanni Paolo I)</a>, oltre che del paesaggista Giuseppe Zais e del poeta Valerio Da Pos.",
+    "home_p3" : "Canale d'Agordo vanta ben 4 frazioni alte: Gares, Fregona, Feder, Carfon, dove il patrimonio rurale ed edilizio ha tutt'ora mantenuto viva la tipicit&agrave;  dei tabiai di montagna e la tradizione dello sfalcio e della cura del territorio.",
+
+    "valle_di_gares_content_p1" : "La Valle di Gares &egrave; una valle di origine glaciale che si estende per ben 7 km dal capoluogo di Canale d'Agordo in  direzione delle Pale di San Martino.",
+    "valle_di_gares_content_p2" : "Meta di escursionismo e frequente visita da parte dei turisti  e non che soggiornano in Valle del Biois, si presta alle pi&ugrave; svariate tipologie di pratica sportiva : dalla mountain bike, allo skiroll, dal nordic walking agli sport prettamente invernali come lo sci di fondo e l'arrampicata su ghiaccio.",
+    "valle_di_gares_content_p3" : "Al termine della Valle, chiusa dalla catena delle Pale di San Martino, sono ben visibili e facilmente accessibili le cascate delle Comelle e diversi rifugi.",
+    "valle_di_gares_content_p4" : "Qui sorsero tra il 1450 ed il 1748 le miniere del Sass  Negher, dalle quali venivano estratti principalmente rame e ferro. Il nome \"Forno di Canale\" fu, infatti, attribuito al Paese per la sua importanza come centro minerario e siderurgico dell'Agordino.",
+    "biotopo_content_p1" : "In localit&agrave;  Pian de Giare (1381 m slm), &egrave; possibile passeggiare in prossimit&agrave;  del Laghetto di Gares. Questo lago &egrave; presente dal disgelo fino all'inizio della stagione invernale ed offre condizioni idonee per lo sviluppo di comunit&agrave;  idrofitiche, opportunit&agrave;  per la riproduzione degli anfibi e per il nutrimento di altre specie.",
+    "biotopo_content_p2" : "Un'ambiente che &egrave; espressione di un insieme di realt&agrave;  vegetazionali e faunistiche insediate all'interno di spazi ed ambienti molto vari ed armoniosamente collegati fra di loro: la sorgente, il lago, il torrente, i boschi di conifere, il prato...",
+    
+    "valle_del_biois_content_p1" : "La Valle del Biois, che si estende per 20 km dal Passo San Pellegrino fino a alla confluenza con il torrente Cordevole, comprende i Comuni di Falcade, Canale d'Agordo, Vallada Agordina e Cencenighe Agordino.",
+    "valle_del_biois_content_p2" : "Confina con la provincia autonoma di Trento e deve il suo nome al torrente Biois, che ha le proprie sorgenti al Passo di San Pellegrino (Moena). La Valle del Biois, nota anche con l'appellativo di  \"Valle coi Santi alle Finestre\", &egrave; ricca di storia e cultura, di personalit&agrave;  di rilievo in tutti in campi, dalla religione alla medicina, dall'arte allo sport e pu&ograve; vantare un patrimonio naturalistico riconosciuto a livello mondiale dall'UNESCO. I panorami che questi luoghi regalano al visitatore sono, infatti, di straordinaria ed unica bellezza. Falcade &egrave; il centro sportivo per eccellenza con gli impianti che da localit&agrave;  Molino permettono di accedere ai collegamenti sciistici del Comprensorio della Ski Area San Pellegrino, con ben 60 km di piste.",
+    "valle_del_biois_content_p3" : "Canale d'Agordo, assieme a Vallada Agordina, &egrave; il centro culturale della Vallata e, in localit&agrave;  Gares pu&ograve; vantare anche un circuito di piste da fondo. Cencenighe rappresenta il crocevia dei collegamenti tra la Valle del Biois e la Val Cordevole con il resto dell'Agordino e del Bellunese.",
+    
+    "via_crucis_p1" : "In occasione del trentennale dell'elezione e improvvisa morte di Papa Luciani, la comunit&agrave; di Canale d'Agordo ha ritenuto di ricordare un cos&igrave; importante anniversario erigendo una via Crucis lungo uno dei tracciati pi&ugrave; suggestivi del paese: la via Cavallera, con partenza da Piazza Papa Luciani.La via Crucis si compone di 15 stazioni con delle formelle in bronzo realizzate dall'artista Franco Murer che raffigurano i vari momenti della penitenza di Ges&ugrave;.",
+    "via_crucis_p2" : "Un percorso emozionante e profondo, meta dei numerosi pellegrini e turisti che frequentano Canale d'Agordo si in estate che in inverno.",
+    
+    "nessun_risultato" : "Nessun risultato",
+    "sito" : "Sito",
+    "email" : "Email",
+    "come_arrivarci" : "Come arrivarci",
+    "orari_dolomitibus" : "Orari Dolomitibus",
+    "orari_trenitalia" : "Orari Trenitalia",
+    "trasporti_privati" : "Trasporti privati",
+    "provincia_di_Belluno" : "Provincia di Belluno",
+    "fino_a_Belluno" : "Fino a Belluno",
+
+    "footer_dove_trovarci" : "Dove trovarci",
+    "footer_come_contattarci" : "Come contattarci",
+    "footer_orari_ufficio" : "Orari ufficio",
+    "footer_sabato" : "Sabato",
+    "footer_venerdi" : "Venerd&igrave;",
+    "footer_domenica_e_festivi" : "Domenica e festivi",
+    "footer_meteo" : "meteo"
+
+}

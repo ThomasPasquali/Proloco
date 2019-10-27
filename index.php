@@ -1,17 +1,18 @@
 <?php
-  define("DEF_LANG", 'en');
+  define('DEF_LANG', 'en');
   
   $lang = NULL;
+  $dir = __DIR__;
 
   //Se settato parametro lang
-  if(isset($_REQUEST['lang']) && file_exists(__DIR__."/langs/$_REQUEST[lang].json")) {
-    $lang = json_decode(file_get_contents(__DIR__."/langs/$_REQUEST[lang].json"), TRUE);
+  if(isset($_REQUEST['lang']) && file_exists($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$_REQUEST['lang'].'.json')) {
+    $lang = file_get_contents($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$_REQUEST['lang'].'.json');
     setcookie('lang', $_REQUEST['lang']);
   }
 
   //Cookie lang check
-  if(!$lang && isset($_COOKIE['lang']) && file_exists(__DIR__."/langs/$_COOKIE[lang].json"))
-    $lang = json_decode(file_get_contents(__DIR__."/langs/$_COOKIE[lang].json"), TRUE);
+  if(!$lang && isset($_COOKIE['lang']) && file_exists($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$_COOKIE['lang'].'.json'))
+    $lang = file_get_contents($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$_COOKIE['lang'].'.json');
 
   else {
 
@@ -21,8 +22,8 @@
       $user_langs = $m[2];
 
       for($i = 0; $i < count($user_langs); $i += 2)
-        if(file_exists(__DIR__."/langs/$user_langs[$i].json")) {
-          $lang = json_decode(file_get_contents(__DIR__."/langs/$user_langs[$i].json"), TRUE);
+        if(file_exists($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$user_langs[$i].'.json')) {
+          $lang = file_get_contents($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$user_langs[$i].'.json');
           setcookie('lang', $user_langs[$i]);
           break;
         }
@@ -31,18 +32,20 @@
   }
 
   //Se nemmeno la lingua del browser c'e' uso quella di default
-  if(!$lang) $lang = json_decode(file_get_contents(__DIR__.'/langs/'.DEF_LANG.'.json'), TRUE);
-
+  if(is_null($lang)) $lang = file_get_contents($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.DEF_LANG.'.json');
+  
+  $lang = json_decode($lang, TRUE);
+  
   //DB zone
   include_once 'lib/db.php';
   if(DB::check(['search'], $_REQUEST)) {
     ini_set('display_errors', 0);
     try {
-      $db = new DB(__DIR__.'/../db.ini');
+      $db = new DB($dir.'/../db.ini');
     } catch (Exception $e) {
       header('Content-type: text/txt;');
       echo
-      'Specificare il file ini per il database in: __DIR__.\'/../db.ini
+      'Specificare il file ini per il database in: $dir.\'/../db.ini
   Esempio:
   db = mysql
   host = 127.0.0.1
@@ -85,7 +88,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><?= $lang['menu_alloggi'] ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="?search=Garn%C3%AC,B%26B">Garn&igrave; e B&amp;B</a>
+                        <a class="dropdown-item" href="?search=Garn%C3%AC,B%26B">Garn&igrave;-B&amp;B</a>
                         <a class="dropdown-item" href="?search=Albergo,Hotel"><?= $lang['menu_alloggi_hotel'] ?></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="files/appartamenti.pdf" target="_blank"><?= $lang['menu_alloggi_appartamenti'] ?></a>
@@ -124,7 +127,7 @@
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><?= $lang['menu_lang'] ?></a>
                   <div class="dropdown-menu">
                     <?php
-                      $dir = new DirectoryIterator(__DIR__.'/langs');
+                      $dir = new DirectoryIterator($dir.'/langs');
                       foreach ($dir as $fileinfo)
                         if (!$fileinfo->isDot()){
                           $l = explode('.', $fileinfo->getFilename())[0];
