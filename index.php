@@ -99,6 +99,8 @@
                         <a class="dropdown-item" href="#" onclick="show('v-d-b');">Valle del Biois</a>
                         <a class="dropdown-item" href="#" onclick="show('via-crucis');">Via Crucis Papa Luciani</a>
                         <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="?search=Negozio"><?= $lang['menu_cosa_vedere_negozi'] ?></a>
+                        <a class="dropdown-item" href="?search=Locale"><?= $lang['menu_cosa_vedere_locali'] ?></a>
                         <a class="dropdown-item" href="?search=Mostra,Museo"><?= $lang['menu_cosa_vedere_mostre_musei'] ?></a>
                         <a class="dropdown-item" href="?search=Biblioteca"><?= $lang['menu_cosa_vedere_biblioteche'] ?></a>
                     </div>
@@ -259,7 +261,7 @@
             <!-- #endregion Jssor Slider End -->
           </div>
           
-          <div id="via-crucis">
+          <div id="via-crucis" class="hidden">
           	<h1>Via Crucis Papa Luciani</h1>
             <p><?= $lang['via_crucis_p1'] ?></p>
             <p><?= $lang['via_crucis_p2'] ?></p>
