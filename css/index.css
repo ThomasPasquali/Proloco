@@ -162,7 +162,7 @@
 
 .result .inline-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 .result:nth-child(2n+1) {

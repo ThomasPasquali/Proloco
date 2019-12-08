@@ -287,7 +287,8 @@
                 <div class="inline-grid">
                   <?= $res['Sito']?"<p class=\"sito\"><a href=\"$res[Sito]\">".$lang['sito']."</a></p>":'' ?>
                   <?= $res['Maps']?"<p class=\"mappa\"><a href=\"$res[Maps]\">".$lang['come_arrivarci']."</a></p>":'' ?>
-                  <?= $res['Email']?"<p class=\"mappa\"><a href=\"mailto:$res[Email]\">".$lang['email']."</a></p>":'' ?>
+                  <?= $res['Email']?"<p class=\"email\"><a href=\"mailto:$res[Email]\">".$lang['email']."</a></p>":'' ?>
+                  <?= $res['Telefono']?"<p class=\"telefono\"><a href=\"tel:$res[Telefono]\">".$lang['telefono'].$res['Telefono']."</a></p>":'' ?>
                 </div>
                 <?php } ?>
                   
