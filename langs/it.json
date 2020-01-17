@@ -5,18 +5,23 @@
     "menu_alloggi_appartamenti" : "Appartamenti",
     "menu_eventi" : "Eventi",
     "menu_cosa_vedere" : "Cosa vedere",
+    "menu_cosa_vedere_il_paese" : "Il paese",
+    "menu_cosa_vedere_valle_di_gares" : "Valle di Gares - Biotopo",
+    "menu_cosa_vedere_valle_del_biois" : "Valle del Biois",
+    "menu_cosa_vedere_via_crucis" : "Via Crucis Papa Luciani",
     "menu_cosa_vedere_negozi" : "Negozi",
     "menu_cosa_vedere_locali" : "Locali",
     "menu_cosa_vedere_mostre_musei" : "Mostre e musei",
     "menu_cosa_vedere_biblioteche" : "Biblioteche",
     "menu_cosa_vedere_eventi" : "Eventi",
-    "menu_cosa_vedere_eventi_in_zona" : "Eventi in zona",
+    "menu_eventi_in_zona" : "Eventi in zona",
+    "menu_eventi_a_canale" : "Eventi a Canale",
     "menu_come_arrivare" : "Come arrivare",
 
-    "home_title" : "Il paese",
-    "home_p1" : "Canale d'Agordo, Forno di Canale fino al 1964 &egrave; uno dei paesi che compongono la Valle del Biois, in Agordino, a circa 50 km da Belluno.",
-    "home_p2" : "Il paese &egrave; ampliamente noto in quanto paese natale di <a target=\"_blank\" href=\"https://it.wikipedia.org/wiki/Papa_Giovanni_Paolo_I\">Albino Luciani (papa Giovanni Paolo I)</a>, oltre che del paesaggista Giuseppe Zais e del poeta Valerio Da Pos.",
-    "home_p3" : "Canale d'Agordo vanta ben 4 frazioni alte: Gares, Fregona, Feder, Carfon, dove il patrimonio rurale ed edilizio ha tutt'ora mantenuto viva la tipicit&agrave;  dei tabiai di montagna e la tradizione dello sfalcio e della cura del territorio.",
+    "paese_title" : "Il paese",
+    "paese_p1" : "Canale d'Agordo, Forno di Canale fino al 1964 &egrave; uno dei paesi che compongono la Valle del Biois, in Agordino, a circa 50 km da Belluno.",
+    "paese_p2" : "Il paese &egrave; ampliamente noto in quanto paese natale di <a target=\"_blank\" href=\"https://it.wikipedia.org/wiki/Papa_Giovanni_Paolo_I\">Albino Luciani (papa Giovanni Paolo I)</a>, oltre che del paesaggista Giuseppe Zais e del poeta Valerio Da Pos.",
+    "paese_p3" : "Canale d'Agordo vanta ben 4 frazioni alte: Gares, Fregona, Feder, Carfon, dove il patrimonio rurale ed edilizio ha tutt'ora mantenuto viva la tipicit&agrave;  dei tabiai di montagna e la tradizione dello sfalcio e della cura del territorio.",
 
     "valle_di_gares_content_p1" : "La Valle di Gares &egrave; una valle di origine glaciale che si estende per ben 7 km dal capoluogo di Canale d'Agordo in  direzione delle Pale di San Martino.",
     "valle_di_gares_content_p2" : "Meta di escursionismo e frequente visita da parte dei turisti  e non che soggiornano in Valle del Biois, si presta alle pi&ugrave; svariate tipologie di pratica sportiva : dalla mountain bike, allo skiroll, dal nordic walking agli sport prettamente invernali come lo sci di fondo e l'arrampicata su ghiaccio.",
@@ -45,10 +50,8 @@
 
     "footer_dove_trovarci" : "Dove trovarci",
     "footer_come_contattarci" : "Come contattarci",
-    "footer_orari_ufficio" : "Orari ufficio",
-    "footer_sabato" : "Sabato",
-    "footer_venerdi" : "Venerd&igrave;",
-    "footer_domenica_e_festivi" : "Domenica e festivi",
-    "footer_meteo" : "meteo"
+    "footer_orari_ufficio_titolo" : "Orari ufficio",
+    "footer_orari_ufficio" : "Venerdi, sabato e domenica<br>9:00 - 12:00<br>15:00 - 18:00",
+    "footer_meteo" : "Meteo"
 
 }

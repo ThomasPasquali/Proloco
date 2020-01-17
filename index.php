@@ -18,6 +18,7 @@
 
     //Se lang non è ancora stato inizializzato uso il lang del browser
     if(!$lang) {
+      $m = [];
       preg_match_all('/(\W|^)([a-z]{2})([^a-z]|$)/six', $_SERVER['HTTP_ACCEPT_LANGUAGE'], $m, PREG_PATTERN_ORDER);
       $user_langs = $m[2];
 
@@ -88,7 +89,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><?= $lang['menu_alloggi'] ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="?search=Garn%C3%AC,B%26B">Garn&igrave;-B&amp;B</a>
+                        <a class="dropdown-item" href="?search=Garn%C3%AC,B%26B">Garn&igrave; e B&amp;B</a>
                         <a class="dropdown-item" href="?search=Albergo,Hotel"><?= $lang['menu_alloggi_hotel'] ?></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="files/appartamenti.pdf" target="_blank"><?= $lang['menu_alloggi_appartamenti'] ?></a>
@@ -98,9 +99,10 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><?= $lang['menu_cosa_vedere'] ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#" onclick="show('v-d-g');">Valle di Gares - Biotopo</a>
-                        <a class="dropdown-item" href="#" onclick="show('v-d-b');">Valle del Biois</a>
-                        <a class="dropdown-item" href="#" onclick="show('via-crucis');">Via Crucis Papa Luciani</a>
+                    	<a class="dropdown-item" href="#" onclick="show('paese');"><?= $lang['menu_cosa_vedere_il_paese'] ?></a>
+                        <a class="dropdown-item" href="#" onclick="show('v-d-g');"><?= $lang['menu_cosa_vedere_valle_di_gares'] ?></a>
+                        <a class="dropdown-item" href="#" onclick="show('v-d-b');"><?= $lang['menu_cosa_vedere_valle_del_biois'] ?></a>
+                        <a class="dropdown-item" href="#" onclick="show('via-crucis');"><?= $lang['menu_cosa_vedere_via_crucis'] ?></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="?search=Negozio"><?= $lang['menu_cosa_vedere_negozi'] ?></a>
                         <a class="dropdown-item" href="?search=Locale"><?= $lang['menu_cosa_vedere_locali'] ?></a>
@@ -112,11 +114,10 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><?= $lang['menu_eventi'] ?></a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="http://web4.deskline.net/valledelbiois/it/event/list" target="_blank"><?= $lang['menu_cosa_vedere_eventi_in_zona'] ?></a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="http://www.casparetha.it" target="_blank">Casparetha</a>
-                        <a class="dropdown-item" href="http://www.zinghenesta.it" target="_blank">Zinghenesta</a>
-                    </div>
+                        <a class="dropdown-item" href="#" onclick="show('eventi-canale');"><?= $lang['menu_eventi_a_canale'] ?></a>
+                    	<div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="http://web4.deskline.net/valledelbiois/it/event/list" target="_blank"><?= $lang['menu_eventi_in_zona'] ?></a>
+					</div>
                 </li>
 
                 <li class="nav-item">
@@ -142,46 +143,13 @@
         <div id="content-wrap">
             <div id="content">
 
-                <div id="home">
-                  <h1><?= $lang['home_title'] ?></h1>
-                  <p><?= $lang['home_p1'] ?></p>
-                  <p><?= $lang['home_p2'] ?></p>
-                  <p><?= $lang['home_p3'] ?></p>
+          <div id="home" class="subpage">
+              <?php //TODO ?>
+              <img src="imgs/Home/Estate.jpg">
+              <img src="imgs/Home/Inverno.jpg">
+          </div>
 
-                  <!-- #region Jssor Slider Start -->
-                  <div id="jssor_home" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
-                    <!-- Loading Screen -->
-                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
-                    </div>
-                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
-                        <div><img data-u="image" src="imgs/background.jpg" /></div>
-                    </div>
-                    <!-- Bullet Navigator -->
-                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- Arrow Navigator -->
-                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-                        </svg>
-                    </div>
-                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-                        </svg>
-                    </div>
-                  </div>
-                  <!-- #endregion Jssor Slider End -->
-
-                </div>
-
-          <div id="v-d-g" class="hidden">
+          <div id="v-d-g" class="hidden subpage">
             <h1>Valle di Gares</h1>
             <p><?= $lang['valle_di_gares_content_p1'] ?></p>
             <p><?= $lang['valle_di_gares_content_p2'] ?></p>
@@ -199,8 +167,9 @@
                   <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
               </div>
               <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
-                  <div><img data-u="image" src="imgs/slider/aurora.jpg" /></div>
-                  <div><img data-u="image" src="imgs/slider/universo.jpg" /></div>
+                  <div><img data-u="image" src="imgs/ValleDiGares/1.JPG"/></div>
+                  <div><img data-u="image" src="imgs/ValleDiGares/2.JPG"/></div>
+                  <div><img data-u="image" src="imgs/ValleDiGares/3.JPG"/></div>
               </div>
               <!-- Bullet Navigator -->
               <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
@@ -225,7 +194,7 @@
             <!-- #endregion Jssor Slider End -->
           </div>
 
-          <div id="v-d-b" class="hidden">
+          <div id="v-d-b" class="hidden subpage">
             <h1>Valle del Biois</h1>
             <p><?= $lang['valle_del_biois_content_p1'] ?></p>
             <p><?= $lang['valle_del_biois_content_p2'] ?></p>
@@ -238,8 +207,8 @@
                   <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
               </div>
               <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
-                  <div><img data-u="image" src="imgs/slider/aurora.jpg" /></div>
-                  <div><img data-u="image" src="imgs/slider/universo.jpg" /></div>
+                  <div><img data-u="image" src="imgs/ValleDelBiois/1.JPG" /></div>
+                  <div><img data-u="image" src="imgs/ValleDelBiois/2.JPG" /></div>
               </div>
               <!-- Bullet Navigator -->
               <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
@@ -264,12 +233,106 @@
             <!-- #endregion Jssor Slider End -->
           </div>
           
-          <div id="via-crucis" class="hidden">
-          	<h1>Via Crucis Papa Luciani</h1>
+          <div id="via-crucis" class="hidden subpage">
+          	<h1>Via Crucis</h1>
             <p><?= $lang['via_crucis_p1'] ?></p>
             <p><?= $lang['via_crucis_p2'] ?></p>
+            <img src="imgs/ViaCrucis/ViaCrucis.jpg"/>
           </div>
-
+          
+          <div id="eventi-canale" class="hidden subpage">
+          	<div id="eventi">
+          		<div class="evento">
+              		<img src="imgs/Eventi/Casparetha.jpg"/>
+              		<h1>Casparetha</h1>
+              		<p>Descr</p>
+          		</div>
+          	
+              	<div class="evento">
+              		<img src="imgs/Eventi/Zinghenesta.jpg"/>
+              		<h1>Zinghenesta</h1>
+              		<p>Descr</p>
+              	</div>
+              	
+              	<div class="evento">
+              		<img src="imgs/Eventi/Cacciatori.jpg"/>
+              		<h1>Festa del cacciatore</h1>
+              		<p>Descr</p>
+              	</div>
+              	
+              	<div class="evento">
+              		<img src="imgs/Eventi/SanGiovanni.jpg"/>
+              		<h1>Sagra di San Giovanni</h1>
+              		<p>Descr</p>
+              	</div>
+              	
+              	<div class="evento">
+              		<img src="imgs/Eventi/Trator.jpg"/>
+              		<h1>El d&igrave; del trator</h1>
+              		<p>Descr</p>
+              	</div>
+              	
+              	<div class="evento">
+              		<img src="imgs/Eventi/Feder.jpg"/>
+              		<h1>Sagra di Feder</h1>
+              		<p>Descr</p>
+              	</div>
+              	
+              	<div class="evento">
+              		<img src="imgs/Eventi/Fregona.jpg"/>
+              		<h1>Sagra di Fregona</h1>
+              		<p>Descr</p>
+              	</div>
+              	
+              	<div class="evento">
+              		<img src="imgs/Eventi/Mercatini.jpg"/>
+              		<h1>Mercatini hobbistica e artigianato</h1>
+              		<p>Descr</p>
+              	</div>
+          	</div>
+          	<?php //TODO ?>
+          </div>
+          
+          <div id="paese" class="hidden subpage">
+          	  <h1><?= $lang['paese_title'] ?></h1>
+              <p><?= $lang['paese_p1'] ?></p>
+              <p><?= $lang['paese_p2'] ?></p>
+              <p><?= $lang['paese_p3'] ?></p>
+    
+              <!-- #region Jssor Slider Start -->
+              <div id="jssor_home" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
+                </div>
+                <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
+                    <div><img data-u="image" src="imgs/Paese/1.jpg"/></div>
+                    <div><img data-u="image" src="imgs/Paese/2.jpg"/></div>
+                    <div><img data-u="image" src="imgs/Paese/3.jpg"/></div>
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                    <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Arrow Navigator -->
+                <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                    </svg>
+                </div>
+                <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                    </svg>
+                </div>
+              </div>
+              <!-- #endregion Jssor Slider End -->
+          </div>
+          
           <div id="search" class="hidden">
             <!-- #region Ricerca -->
             <div class="resultBox">
@@ -283,7 +346,7 @@
                 <?= $res['Foto']?"<img src=\"imgs/dbImgs/$res[Foto]\">":'' ?>
                 <?= $res['Descrizione']?"<p class=\"descrizione\">".$res['Descrizione']."</p>":'' ?>
 
-                <?php if($res['Sito']||$res['Maps']||$res['Email']) { ?>
+                <?php if($res['Sito']||$res['Maps']||$res['Email']||$res['Telefono']) { ?>
                 <div class="inline-grid">
                   <?= $res['Sito']?"<p class=\"sito\"><a href=\"$res[Sito]\">".$lang['sito']."</a></p>":'' ?>
                   <?= $res['Maps']?"<p class=\"mappa\"><a href=\"$res[Maps]\">".$lang['come_arrivarci']."</a></p>":'' ?>
@@ -322,7 +385,7 @@
 
             </div>
 
-				  </div>
+		  	</div>
           </div>  
 
           <footer id="footer">
@@ -339,9 +402,8 @@
                     <p><img src="imgs/telephone.svg" class="icon"><a href="tel: 0437 1948030" target="_blank">0437 1948030</a></p>
                   </div>
                   <div class="col-sm">
-                    <h4><?= $lang['footer_orari_ufficio'] ?>:<img src="imgs/info.svg" class="icon"></h4>
-                    <p><?= $lang['footer_sabato'] ?><br>9:00-12:00 e 15:00-18:00</p>
-                    <p><?= $lang['footer_venerdi'] ?>, <?= $lang['footer_domenica_e_festivi'] ?>:<br>9.00-12.00</p>
+                    <h4><?= $lang['footer_orari_ufficio_titolo'] ?>:<img src="imgs/info.svg" class="icon"></h4>
+                    <p><?= $lang['footer_orari_ufficio'] ?></p>
                   </div>
                   <div class="col-sm">
                     <h4>Link:</h4>
@@ -352,8 +414,6 @@
                 </div>
               </div>
             </footer>
-      </div>  
-    </div>
     <?= isset($results)?'<script>show(\'search\');</script>':'' ?>
     <script src="js/slider.js"></script>
 </body>
