@@ -29,6 +29,11 @@ function show(what='') {
 	switch(what) {
         case '':
             break;
+            
+        case 'estate-inverno':
+        	$('#content').children().each(function(){ $(this).css('display', 'none'); });
+        	$('#'+what).css('display', 'grid');
+            break;
 
         default:
         	if($('#'+what)) {
@@ -37,4 +42,19 @@ function show(what='') {
         	}
             break;
     }
+}
+
+function hide(elem) {
+	$(elem).css('display', 'none');
+}
+
+/************HOME*************/
+function estate() {
+	hide('#estate-inverno');
+	show('home-estate');
+}
+
+function inverno() {
+	hide('#estate-inverno');
+	show('home-inverno');
 }

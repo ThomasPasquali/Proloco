@@ -18,6 +18,8 @@ jQuery(document).ready(function ($) {
   var jssor_v_d_b = new $JssorSlider$("jssor_v_d_b", jssor_options);
   var jssor_home = new $JssorSlider$("jssor_home", jssor_options);
   var jssor_v_d_g = new $JssorSlider$("jssor_v_d_g", jssor_options);
+  var jssor_estate = new $JssorSlider$("jssor_estate", jssor_options);
+  var jssor_inverno = new $JssorSlider$("jssor_inverno", jssor_options);
   
 });
 

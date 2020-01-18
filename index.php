@@ -74,15 +74,15 @@
     <script src="js/index.js"></script>
     <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
     <script src="js/slider.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div id="background-img">
         <nav id="menu">
             <div id="title">
-                <img src="imgs/logo.jpg" onclick="show('home');">
-                <h1 onclick="show('home');">Proloco<br>Canale d'Agordo</h1>
+                <img src="imgs/logo.jpg" onclick="show('estate-inverno');">
+                <h1 onclick="show('estate-inverno');">Proloco<br>Canale d'Agordo</h1>
             </div>
             <ul class="nav justify-content-end">
 
@@ -143,11 +143,112 @@
         <div id="content-wrap">
             <div id="content">
 
-          <div id="home" class="subpage">
-              <?php //TODO ?>
-              <img src="imgs/Home/Estate.jpg">
-              <img src="imgs/Home/Inverno.jpg">
+          <div id="home-estate" class="hidden subpage home">
+				<h1><?= $lang['estate_titolo_1'] ?></h1>
+				<p><?= $lang['estate_contenuto_1'] ?></p>
+				<h1><?= $lang['estate_titolo_2'] ?></h1>
+				<p><?= $lang['estate_contenuto_2'] ?></p>
+				<h1><?= $lang['estate_titolo_3'] ?></h1>
+				<p><?= $lang['estate_contenuto_3'] ?></p>
+				<h1><?= $lang['estate_titolo_4'] ?></h1>
+				<p><?= $lang['estate_contenuto_4'] ?></p>
+				
+				<!-- #region Jssor Slider Start -->
+	            <div id="jssor_estate" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
+	              <!-- Loading Screen -->
+	              <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+	                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/spin.svg" />
+	              </div>
+	              <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
+	                  <div><img data-u="image" src="imgs/Home/Estate/1.JPG"/></div>
+	                  <div><img data-u="image" src="imgs/Home/Estate/2.JPG"/></div>
+	                  <div><img data-u="image" src="imgs/Home/Estate/3.JPG"/></div>
+	              </div>
+	              <!-- Bullet Navigator -->
+	              <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+	                  <div data-u="prototype" class="i" style="width:16px;height:16px;">
+	                      <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+	                          <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+	                      </svg>
+	                  </div>
+	              </div>
+	              <!-- Arrow Navigator -->
+	              <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+	                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+	                      <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+	                  </svg>
+	              </div>
+	              <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+	                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+	                      <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+	                  </svg>
+	              </div>
+	            </div>
+	            <!-- #endregion Jssor Slider End -->
           </div>
+          
+          <div id="home-inverno" class="hidden subpage home">
+				<h1><?= $lang['inverno_titolo_1'] ?></h1>
+				<p><?= $lang['inverno_contenuto_1'] ?></p>
+				<h1><?= $lang['inverno_titolo_2'] ?></h1>
+				<p><?= $lang['inverno_contenuto_2'] ?></p>
+				<h1><?= $lang['inverno_titolo_3'] ?></h1>
+				<p><?= $lang['inverno_contenuto_3'] ?></p>
+				<h1><?= $lang['inverno_titolo_4'] ?></h1>
+				<p><?= $lang['inverno_contenuto_4'] ?></p>
+				<h1><?= $lang['inverno_titolo_5'] ?></h1>
+				<p><?= $lang['inverno_contenuto_5'] ?></p>
+				<h1><?= $lang['inverno_titolo_6'] ?></h1>
+				<p><?= $lang['inverno_contenuto_6'] ?></p>
+				
+				<!-- #region Jssor Slider Start -->
+	            <div id="jssor_inverno" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
+	              <!-- Loading Screen -->
+	              <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+	                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/spin.svg" />
+	              </div>
+	              <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
+	                  <div><img data-u="image" src="imgs/Home/Inverno/1.JPG"/></div>
+	                  <div><img data-u="image" src="imgs/Home/Inverno/2.JPG"/></div>
+	                  <div><img data-u="image" src="imgs/Home/Inverno/3.JPG"/></div>
+	              </div>
+	              <!-- Bullet Navigator -->
+	              <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+	                  <div data-u="prototype" class="i" style="width:16px;height:16px;">
+	                      <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+	                          <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+	                      </svg>
+	                  </div>
+	              </div>
+	              <!-- Arrow Navigator -->
+	              <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+	                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+	                      <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+	                  </svg>
+	              </div>
+	              <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+	                  <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+	                      <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+	                  </svg>
+	              </div>
+	            </div>
+	            <!-- #endregion Jssor Slider End -->
+          </div>
+          
+          <div id="estate-inverno">
+              <div id="estate" onclick="estate();">
+				  <img src="imgs/Home/Estate.jpg" class="image">
+				  <div class="middle">
+				    <div class="hover-text"><?= $lang['home_estate']?></div>
+				  </div>
+              </div>
+              <div id="inverno" onclick="inverno();">
+				  <img src="imgs/Home/Inverno.jpg" class="image">
+				  <div class="middle">
+				    <div class="hover-text"><?= $lang['home_inverno']?></div>
+				  </div>
+              </div>
+            </div>
 
           <div id="v-d-g" class="hidden subpage">
             <h1>Valle di Gares</h1>
@@ -164,7 +265,7 @@
             <div id="jssor_v_d_g" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
               <!-- Loading Screen -->
               <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
+                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/spin.svg" />
               </div>
               <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
                   <div><img data-u="image" src="imgs/ValleDiGares/1.JPG"/></div>
@@ -204,7 +305,7 @@
             <div id="jssor_v_d_b" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
               <!-- Loading Screen -->
               <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
+                  <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/spin.svg" />
               </div>
               <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
                   <div><img data-u="image" src="imgs/ValleDelBiois/1.JPG" /></div>
@@ -244,53 +345,52 @@
           	<div id="eventi">
           		<div class="evento">
               		<img src="imgs/Eventi/Casparetha.jpg"/>
-              		<h1>Casparetha</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_casparetha'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_casparetha'] ?></p>
           		</div>
           	
               	<div class="evento">
               		<img src="imgs/Eventi/Zinghenesta.jpg"/>
-              		<h1>Zinghenesta</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_zinghenesta'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_zinghenesta'] ?></p>
               	</div>
               	
               	<div class="evento">
               		<img src="imgs/Eventi/Cacciatori.jpg"/>
-              		<h1>Festa del cacciatore</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_festa_del_cacciatore'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_festa_del_cacciatore'] ?></p>
               	</div>
               	
               	<div class="evento">
               		<img src="imgs/Eventi/SanGiovanni.jpg"/>
-              		<h1>Sagra di San Giovanni</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_san_giovanni'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_san_giovanni'] ?></p>
               	</div>
               	
               	<div class="evento">
               		<img src="imgs/Eventi/Trator.jpg"/>
-              		<h1>El d&igrave; del trator</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_di_del_trator'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_di_del_trator'] ?></p>
               	</div>
               	
               	<div class="evento">
               		<img src="imgs/Eventi/Feder.jpg"/>
-              		<h1>Sagra di Feder</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_sagra_feder'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_sagra_feder'] ?></p>
               	</div>
               	
               	<div class="evento">
               		<img src="imgs/Eventi/Fregona.jpg"/>
-              		<h1>Sagra di Fregona</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_sagra_fregona'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_sagra_fregona'] ?></p>
               	</div>
               	
               	<div class="evento">
               		<img src="imgs/Eventi/Mercatini.jpg"/>
-              		<h1>Mercatini hobbistica e artigianato</h1>
-              		<p>Descr</p>
+              		<h1><?= $lang['eventi_mercatini'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_mercatini'] ?></p>
               	</div>
           	</div>
-          	<?php //TODO ?>
           </div>
           
           <div id="paese" class="hidden subpage">
@@ -303,7 +403,7 @@
               <div id="jssor_home" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
                 <!-- Loading Screen -->
                 <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/slider/spin.svg" />
+                    <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="imgs/spin.svg" />
                 </div>
                 <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:650px;height:380px;overflow:hidden;">
                     <div><img data-u="image" src="imgs/Paese/1.jpg"/></div>
@@ -386,30 +486,31 @@
             </div>
 
 		  	</div>
-          </div>  
+          </div>
+       </div>
 
           <footer id="footer">
-              <div class="container" style="margin-top:auto;margin-bottom:auto;">
+              <div class="container">
                 <div class="row">
-                  <div class="col-sm">
+                  <div class="col">
                     <h4><?= $lang['footer_dove_trovarci'] ?>:<img src="imgs/placeholder.svg" class="icon"></h4>
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Piazza Papa Luciani, 4</a></p>
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Canale d'Agordo (BL) - 32020</a></p>
                   </div>
-                  <div class="col-sm">
+                  <div class="col">
                     <h4><?= $lang['footer_come_contattarci'] ?>:</h4>
                     <p><img src="imgs/email.svg" class="icon"><a href="mailto: info@prolococanale.it" target="_blank">info@prolococanale.it</a></p>
                     <p><img src="imgs/telephone.svg" class="icon"><a href="tel: 0437 1948030" target="_blank">0437 1948030</a></p>
                   </div>
-                  <div class="col-sm">
+                  <div class="col">
                     <h4><?= $lang['footer_orari_ufficio_titolo'] ?>:<img src="imgs/info.svg" class="icon"></h4>
                     <p><?= $lang['footer_orari_ufficio'] ?></p>
                   </div>
-                  <div class="col-sm">
+                  <div class="col">
                     <h4>Link:</h4>
-                    <p><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank"><?= $lang['footer_meteo'] ?></a></p>
-                    <p><a href="https://www.musal.it/webcam/" target="_blank">Webcam</a></p>
-                    <a href="https://www.facebook.com/Pro-Loco-Canale-dAgordo-653270708142524" target="_blank"><img src="imgs/facebook.svg" class="icon"></a>
+                    <p style="padding:0;margin:0;"><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank"><?= $lang['footer_meteo'] ?></a></p>
+                    <p style="padding:0;margin:0;"><a href="https://www.musal.it/webcam/" target="_blank">Webcam</a></p>
+                    <a style="display: inline;" href="https://www.facebook.com/Pro-Loco-Canale-dAgordo-653270708142524" target="_blank"><img src="imgs/facebook.svg" class="icon"></a>
                   </div>
                 </div>
               </div>
