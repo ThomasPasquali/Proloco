@@ -356,6 +356,12 @@
               	</div>
               	
               	<div class="evento">
+              		<img src="imgs/Eventi/TiroAlVof.jpg"/>
+              		<h1><?= $lang['eventi_tiro_al_vof'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_tiro_al_vof'] ?></p>
+              	</div>
+              	
+              	<div class="evento">
               		<img src="imgs/Eventi/Cacciatori.jpg"/>
               		<h1><?= $lang['eventi_festa_del_cacciatore'] ?></h1>
               		<p><?= $lang['eventi_descrizione_festa_del_cacciatore'] ?></p>
@@ -390,6 +396,7 @@
               		<h1><?= $lang['eventi_mercatini'] ?></h1>
               		<p><?= $lang['eventi_descrizione_mercatini'] ?></p>
               	</div>
+              	
           	</div>
           </div>
           

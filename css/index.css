@@ -155,10 +155,10 @@
 }
 
 .hover-text {
-  background-color: rgba(54, 115, 56, 0.5);
-  color: black;
-  font-size: 4em;
-  padding: 16px 32px;
+	background-color: #cc8816;
+	color: black;
+	font-size: 4em;
+	padding: 16px 32px;
 }
 
 #footer {
@@ -284,8 +284,9 @@
 }
 
 #via-crucis img {
-	width: 100%;
-	margin-bottom: 20px;
+	width: 70%;
+	display:block;
+    margin:auto;
 }
 
 #eventi {
