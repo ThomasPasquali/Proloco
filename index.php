@@ -512,13 +512,23 @@
                   <div class="col">
                     <h4><?= $lang['footer_orari_ufficio_titolo'] ?>:<img src="imgs/info.svg" class="icon"></h4>
                     <p><?= $lang['footer_orari_ufficio'] ?></p>
-                  </div>
-                  <div class="col">
-                    <h4>Link:</h4>
-                    <p style="padding:0;margin:0;"><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank"><?= $lang['footer_meteo'] ?></a></p>
-                    <p style="padding:0;margin:0;"><a href="https://www.musal.it/webcam/" target="_blank">Webcam</a></p>
-                    <a style="display: inline;" href="https://www.facebook.com/Pro-Loco-Canale-dAgordo-653270708142524" target="_blank"><img src="imgs/facebook.svg" class="icon"></a>
-                  </div>
+                 </div>
+                </div>
+                <h4><?= $lang['footer_link_utili'] ?>:</h4>
+                <div class="row">
+                	<div class="col"><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank"><?= $lang['footer_sito_meteo'] ?></a></div>
+					<div class="col"><a href="https://www.musal.it/webcam/" target="_blank">Webcam</a></div>
+					<div class="col"><a href="https://www.facebook.com/Pro-Loco-Canale-dAgordo-653270708142524" target="_blank"><img src="imgs/facebook.svg" class="icon"></a></div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                	<div class="col"><a href="http://www.comune.canaledagordo.bl.it/myportal/C_B574/home" target="_blank"><?= $lang['footer_sito_comune'] ?></a></div>
+                	<div class="col"><a href="http://www.musal.it/" target="_blank"><?= $lang['footer_sito_musal'] ?></a></div>
+                	<div class="col"><a href="http://www.parrocchiacanaledagordo.it" target="_blank"><?= $lang['footer_sito_parrocchia'] ?></a></div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                	<div class="col"><a href="https://www.prolocobellunesi.it/consorzio-pro-loco-dellagordino/" target="_blank"><?= $lang['footer_sito_proloco_agordino'] ?></a></div>
+                	<div class="col"><a href="http://www.infodolomiti.it/info/uffici-di-informazione-turistica/ufficio-turistico-di-falcade/6882-l1.html" target="_blank"><?= $lang['footer_sito_ufficio_turistico'] ?></a></div>
+                	<div class="col"><a href="http://www.agordino.bl.it/myportal/CM_AGORD/comuni-agordini" target="_blank"><?= $lang['footer_sito_comunita_montana'] ?></a></div>
                 </div>
               </div>
             </footer>
