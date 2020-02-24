@@ -93,13 +93,16 @@
 
 .home h1 {
 	font-size: 1.7em !important;
-	margin: 5px !important;
+	margin: 2px !important;
 	padding: 0 !important;
 }
 
-.home p {
-
+.home h2 {
+	font-size: 1.4em !important;
+	margin: 2px !important;
+	padding: 0 !important;
 }
+
 
 #estate-inverno {
 	display: grid;
