@@ -398,6 +398,12 @@
               		<h1><?= $lang['eventi_sagra_fregona'] ?></h1>
               		<p><?= $lang['eventi_descrizione_sagra_fregona'] ?></p>
               	</div>
+
+                <div class="evento">
+              		<img src="imgs/Eventi/Gares.jpg"/>
+              		<h1><?= $lang['eventi_sagra_gares'] ?></h1>
+              		<p><?= $lang['eventi_descrizione_sagra_gares'] ?></p>
+              	</div>
               	
               	<div class="evento">
               		<img src="imgs/Eventi/Mercatini.jpg"/>
