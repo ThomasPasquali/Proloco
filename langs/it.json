@@ -23,9 +23,9 @@
 	
     "estate_titolo_1" : "Escursioni",
     "estate_sub_1_1" : "Impianti di risalita",
-    "estate_sub_1_2" : "Rifugi",
+    "estate_sub_1_2" : "<a href=\"files/rifugi.pdf\" target=\"_blank\">Rifugi</a>",
     "estate_sub_1_3" : "Percosi ciclabili",
-    "estate_sub_1_4" : "Proposte",
+    "estate_sub_1_4" : "<a href=\"files/passeggiate.pdf\" target=\"_blank\">Passeggiate</a>",
 
     "estate_titolo_2" : "Sport e attivit&agrave;",
     "estate_sub_2_1" : "Bici e Mountain Bike",
@@ -109,7 +109,7 @@
     "footer_sito_musal" : "MusAL",
     "footer_sito_parrocchia" : "Parrocchia di Canale d'Agordo",
     "footer_sito_proloco_agordino" : "Proloco del Agordino",
-    "footer_sito_ufficio_turistico" : "Ufficio turistico di Falcade",
+    "footer_sito_ski" : "Ski Area San Pellegrino",
     "footer_sito_comunita_montana" : "Unione Montana Agordina"
 
 }
