@@ -1,9 +1,10 @@
 <?php
-  define('DEF_LANG', 'en');
+  define('DEF_LANG', 'IT');
   
   $lang = NULL;
   $dir = __DIR__;
 
+  /*TODO uncommento for language control
   //Se settato parametro lang
   if(isset($_REQUEST['lang']) && file_exists($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$_REQUEST['lang'].'.json')) {
     $lang = file_get_contents($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.$_REQUEST['lang'].'.json');
@@ -30,7 +31,7 @@
         }
     }
 
-  }
+  }*/
 
   //Se nemmeno la lingua del browser c'e' uso quella di default
   if(is_null($lang)) $lang = file_get_contents($dir.DIRECTORY_SEPARATOR.'langs'.DIRECTORY_SEPARATOR.DEF_LANG.'.json');
@@ -108,6 +109,7 @@
                         <a class="dropdown-item" href="?search=Locale"><?= $lang['menu_cosa_vedere_locali'] ?></a>
                         <a class="dropdown-item" href="?search=Mostra,Museo"><?= $lang['menu_cosa_vedere_mostre_musei'] ?></a>
                         <a class="dropdown-item" href="?search=Biblioteca"><?= $lang['menu_cosa_vedere_biblioteche'] ?></a>
+                        <a class="dropdown-item" href="#" onclick="show('chiese');"><?= $lang['menu_cosa_vedere_chiese'] ?></a>
                     </div>
                 </li>
 
@@ -124,19 +126,21 @@
                     <a class="nav-link" href="#" onclick="show('come-arrivare');"><?= $lang['menu_come_arrivare'] ?></a>
                 </li>
 
-                <li class="nav-item dropdown">
+                <!-- TODO delete for language selection
+                  <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false"><?= $lang['menu_lang'] ?></a>
                   <div class="dropdown-menu">
                     <?php
-                      $dir = new DirectoryIterator($dir.'/langs');
+                      /*$dir = new DirectoryIterator($dir.'/langs');
                       foreach ($dir as $fileinfo)
                         if (!$fileinfo->isDot()){
                           $l = explode('.', $fileinfo->getFilename())[0];
                           echo '<a class="dropdown-item" href="?lang='.$l.'">'.$l.'</a>';
-                        }
+                        }*/
                     ?>
                   </div>
                 </li>
+                -->
 
             </ul>
         </nav>
@@ -144,19 +148,28 @@
             <div id="content">
 
             <div id="home-estate" class="hidden subpage home">
-              <h1><?= $lang['estate_titolo_1'] ?></h1>
-              <h2><?= $lang['estate_sub_1_1'] ?></h2>
-              <h2><?= $lang['estate_sub_1_2'] ?></h2>
-              <h2><?= $lang['estate_sub_1_3'] ?></h2>
-              <h2><?= $lang['estate_sub_1_4'] ?></h2>
-            
-              <h1><?= $lang['estate_titolo_2'] ?></h1>
-              <h2><?= $lang['estate_sub_2_1'] ?></h2>
-              <h2><?= $lang['estate_sub_2_2'] ?></h2>
-              <h2><?= $lang['estate_sub_2_3'] ?></h2>
-              <h2><?= $lang['estate_sub_2_4'] ?></h2>
-              <h2><?= $lang['estate_sub_2_5'] ?></h2>
-              <h2><?= $lang['estate_sub_2_6'] ?></h2>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h1><?= $lang['estate_titolo_sx'] ?></h1>
+                    <?php
+                    $i = 1;
+                    while(isset($lang['estate_sub_sx_'.$i]))
+                          echo '<h2>'.$lang['estate_sub_sx_'.($i++)].'</h2>';
+                    ?>
+                  </div>
+
+                  <div class="col">
+                    <h1><?= $lang['estate_titolo_dx'] ?></h1>
+                    <?php
+                    $i = 1;
+                    while(isset($lang['estate_sub_dx_'.$i]))
+                          echo '<h2>'.$lang['estate_sub_dx_'.($i++)].'</h2>';
+                    ?>
+                  </div>
+                </div>
+                
+              </div>
 				
 				      <!-- #region Jssor Slider Start -->
 	            <div id="jssor_estate" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
@@ -244,19 +257,47 @@
           </div>
           
           <div id="estate-inverno">
-              <div id="estate" onclick="estate();">
-				  <img src="imgs/Home/Estate.jpg" class="image">
-				  <div class="middle">
-				    <div class="hover-text"><?= $lang['home_estate']?></div>
-				  </div>
-              </div>
-              <div id="inverno" onclick="inverno();">
-				  <img src="imgs/Home/Inverno.jpg" class="image">
-				  <div class="middle">
-				    <div class="hover-text"><?= $lang['home_inverno']?></div>
-				  </div>
+            <div id="estate" onclick="estate();">
+              <img src="imgs/Home/Estate.jpg" class="image">
+              <div class="middle">
+                <div class="hover-text"><?= $lang['home_estate']?></div>
               </div>
             </div>
+            <div id="inverno" onclick="inverno();">
+              <img src="imgs/Home/Inverno.jpg" class="image">
+              <div class="middle">
+                <div class="hover-text"><?= $lang['home_inverno']?></div>
+              </div>
+            </div>
+          </div>
+
+          <!--
+                <h4><?= $lang['footer_link_utili'] ?>:</h4>
+                <div class="row">
+                	<div class="col"><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank"><?= $lang['footer_sito_meteo'] ?></a></div>
+                  <div class="col"><a href="https://www.musal.it/webcam/" target="_blank">Webcam</a></div>
+                  <div class="col"><a href="https://www.facebook.com/Pro-Loco-Canale-dAgordo-653270708142524" target="_blank"><img src="imgs/facebook.svg" class="icon"></a></div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                	<div class="col"><a href="http://www.comune.canaledagordo.bl.it/myportal/C_B574/home" target="_blank"><?= $lang['footer_sito_comune'] ?></a></div>
+                	<div class="col"><a href="http://www.musal.it/" target="_blank"><?= $lang['footer_sito_musal'] ?></a></div>
+                	<div class="col"><a href="http://www.parrocchiacanaledagordo.it" target="_blank"><?= $lang['footer_sito_parrocchia'] ?></a></div>
+                </div>
+                <div class="row" style="margin-top: 10px;">
+                	<div class="col"><a href="https://www.prolocobellunesi.it/consorzio-pro-loco-dellagordino/" target="_blank"><?= $lang['footer_sito_proloco_agordino'] ?></a></div>
+                	<div class="col"><a href="https://www.skiareasanpellegrino.it/" target="_blank"><?= $lang['footer_sito_ski'] ?></a></div>
+                	<div class="col"><a href="http://www.agordino.bl.it/myportal/CM_AGORD/comuni-agordini" target="_blank"><?= $lang['footer_sito_comunita_montana'] ?></a></div>
+                </div>
+                      -->
+          <div id="links">
+            <p><?= $lang['link_utili'] ?></p>
+            <ul>
+              <li><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank"><?= $lang['link_utili_meteo'] ?></a></li>
+              <li><a href="https://www.skiareasanpellegrino.it/" target="_blank"><?= $lang['link_utili_impianti'] ?></a></li>
+              <li><a href="https://www.musal.it/webcam/" target="_blank"><?= $lang['link_utili_webcam'] ?></a></li>
+              <li><a href="http://www.comune.canaledagordo.bl.it/myportal/C_B574/home" target="_blank"><?= $lang['link_utili_comune'] ?></a></li>
+            </ul>
+          </div>
 
           <div id="v-d-g" class="hidden subpage">
             <h1>Valle di Gares</h1>
@@ -264,6 +305,10 @@
             <p><?= $lang['valle_di_gares_content_p2'] ?></p>
             <p><?= $lang['valle_di_gares_content_p3'] ?></p>
             <p><?= $lang['valle_di_gares_content_p4'] ?></p>
+
+            <h1>Le cascate</h1>
+            <p><?= $lang['cascate_content_p1'] ?></p>
+            <p><?= $lang['cascate_content_p2'] ?></p>
             
             <h1>Biotopo</h1>
             <p><?= $lang['biotopo_content_p1'] ?></p>
@@ -347,6 +392,10 @@
             <p><?= $lang['via_crucis_p1'] ?></p>
             <p><?= $lang['via_crucis_p2'] ?></p>
             <img src="imgs/ViaCrucis/ViaCrucis.jpg"/>
+          </div>
+
+          <div id="chiese" class="hidden subpage">
+            <h1>Chiese della Valle del Biois</h1>
           </div>
           
           <div id="eventi-canale" class="hidden subpage">
@@ -524,33 +573,21 @@
                     <h4><?= $lang['footer_dove_trovarci'] ?>:<img src="imgs/placeholder.svg" class="icon"></h4>
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Piazza Papa Luciani, 4</a></p>
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Canale d'Agordo (BL) - 32020</a></p>
+                    <p>P.IVA 13246578901</p>
                   </div>
-                  <div class="col">
-                    <h4><?= $lang['footer_come_contattarci'] ?>:</h4>
-                    <p><img src="imgs/email.svg" class="icon"><a href="mailto: info@prolococanale.it" target="_blank">info@prolococanale.it</a></p>
-                    <p><img src="imgs/telephone.svg" class="icon"><a href="tel: 0437 1948030" target="_blank">0437 1948030</a></p>
-                  </div>
+                  
                   <div class="col">
                     <h4><?= $lang['footer_orari_ufficio_titolo'] ?>:<img src="imgs/info.svg" class="icon"></h4>
                     <p><?= $lang['footer_orari_ufficio'] ?></p>
-                 </div>
-                </div>
+                  </div>
 
-                <h4><?= $lang['footer_link_utili'] ?>:</h4>
-                <div class="row">
-                	<div class="col"><a href="https://www.arpa.veneto.it/previsioni/it/html/meteo_dolomiti.php" target="_blank"><?= $lang['footer_sito_meteo'] ?></a></div>
-                  <div class="col"><a href="https://www.musal.it/webcam/" target="_blank">Webcam</a></div>
-                  <div class="col"><a href="https://www.facebook.com/Pro-Loco-Canale-dAgordo-653270708142524" target="_blank"><img src="imgs/facebook.svg" class="icon"></a></div>
-                </div>
-                <div class="row" style="margin-top: 10px;">
-                	<div class="col"><a href="http://www.comune.canaledagordo.bl.it/myportal/C_B574/home" target="_blank"><?= $lang['footer_sito_comune'] ?></a></div>
-                	<div class="col"><a href="http://www.musal.it/" target="_blank"><?= $lang['footer_sito_musal'] ?></a></div>
-                	<div class="col"><a href="http://www.parrocchiacanaledagordo.it" target="_blank"><?= $lang['footer_sito_parrocchia'] ?></a></div>
-                </div>
-                <div class="row" style="margin-top: 10px;">
-                	<div class="col"><a href="https://www.prolocobellunesi.it/consorzio-pro-loco-dellagordino/" target="_blank"><?= $lang['footer_sito_proloco_agordino'] ?></a></div>
-                	<div class="col"><a href="https://www.skiareasanpellegrino.it/" target="_blank"><?= $lang['footer_sito_ski'] ?></a></div>
-                	<div class="col"><a href="http://www.agordino.bl.it/myportal/CM_AGORD/comuni-agordini" target="_blank"><?= $lang['footer_sito_comunita_montana'] ?></a></div>
+                  <div class="col">
+                    <h4><?= $lang['footer_come_contattarci'] ?>:</h4>
+                    <p><img src="imgs/telephone.svg" class="icon"><a href="tel: 0437 1948030" target="_blank">+39 0437 1948030</a></p>
+                    <p><img src="imgs/email.svg" class="icon"><a href="mailto: info@prolococanale.it" target="_blank">info@prolococanale.it</a></p>
+                    <p>Facebook: <a href="https://it-it.facebook.com/pages/category/Community/Pro-Loco-Canale-dAgordo-653270708142524/" target="_blank">Proloco Canale d'Agordo</a></p>
+                  </div>
+
                 </div>
 
               </div>

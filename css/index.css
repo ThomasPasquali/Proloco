@@ -115,7 +115,8 @@
 }
 
 #estate, #inverno {
-	position: relative;
+    position: relative;
+    bottom: 150px;
 }
 
 .image {
@@ -123,11 +124,10 @@
 	position: absolute;
 	opacity: 1;
 	display: block;
-	width: 60%;
+	width: 90%;
 	height: auto;
 	transition: .5s ease;
-	backface-visibility: hidden;
-	top: 50%;
+    backface-visibility: hidden;
 	left: 50%;
 	transform: translate(-50%, -50%);
     background-color: rgba(255,255,255,0.5);
@@ -162,6 +162,31 @@
 	color: black;
 	font-size: 4em;
 	padding: 16px 32px;
+}
+
+#links > p {
+    position: fixed;
+    right: 0;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 200%;
+    font-weight: 900;
+    color:white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    cursor: pointer;
+}
+
+#links > ul {
+    display: block;
+    position: fixed;
+    right: 100px;
+    background-color: aqua;
+}
+
+#links:focus-within #links>ul {
+    display: block;
+    z-index: 10;
 }
 
 #footer {
