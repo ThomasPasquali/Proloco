@@ -103,7 +103,6 @@
 	padding: 0 !important;
 }
 
-
 #estate-inverno {
 	display: grid;
     grid-template-columns: 1fr 1fr;
@@ -246,7 +245,7 @@
 }
 
 .result {
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.85);
     border-radius: 15%;
     white-space: pre-line;
     padding: 3% 5% 3% 5%;
@@ -287,7 +286,7 @@
 }
 
 .subpage {
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.85);
     border-radius: 5%;
     white-space: pre-line;
     padding: 0 5% 0 5%;
@@ -304,7 +303,7 @@
 }
 
 #link_trasporti {
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255,255,255,0.85);
     padding: 20px;
     text-align: center;
     display: flex;
@@ -358,4 +357,22 @@
 
 #eventi-canale .evento h1 {
 	font-size: 1.7em;
+}
+
+#home-estate.subpage {
+    padding: 2%;
+    padding-top: 0;
+}
+
+#home-estate .container {
+    margin: 0;
+    min-width: 100%;
+}
+
+#home-estate .container p {
+    margin-bottom: 35px;
+}
+
+#home-estate .container h2 {
+    font-weight: bold;
 }

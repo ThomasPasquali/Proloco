@@ -154,8 +154,10 @@
                     <h1><?= $lang['estate_titolo_sx'] ?></h1>
                     <?php
                     $i = 1;
-                    while(isset($lang['estate_sub_sx_'.$i]))
-                          echo '<h2>'.$lang['estate_sub_sx_'.($i++)].'</h2>';
+                    while(isset($lang['estate_sub_sx_'.$i])) {
+                      echo '<h2>'.$lang['estate_sub_sx_'.($i)].'</h2>';
+                      echo '<p>'.($lang['estate_cont_sx_'.($i++)]??'').'</p>';
+                    }
                     ?>
                   </div>
 
@@ -163,8 +165,10 @@
                     <h1><?= $lang['estate_titolo_dx'] ?></h1>
                     <?php
                     $i = 1;
-                    while(isset($lang['estate_sub_dx_'.$i]))
-                          echo '<h2>'.$lang['estate_sub_dx_'.($i++)].'</h2>';
+                    while(isset($lang['estate_sub_dx_'.$i])) {
+                      echo '<h2>'.$lang['estate_sub_dx_'.($i)].'</h2>';
+                      echo '<p>'.($lang['estate_cont_dx_'.($i++)]??'').'</p>';
+                    }
                     ?>
                   </div>
                 </div>
@@ -288,7 +292,7 @@
                 	<div class="col"><a href="https://www.skiareasanpellegrino.it/" target="_blank"><?= $lang['footer_sito_ski'] ?></a></div>
                 	<div class="col"><a href="http://www.agordino.bl.it/myportal/CM_AGORD/comuni-agordini" target="_blank"><?= $lang['footer_sito_comunita_montana'] ?></a></div>
                 </div>
-                      -->
+                      
           <div id="links">
             <p><?= $lang['link_utili'] ?></p>
             <ul>
@@ -297,7 +301,7 @@
               <li><a href="https://www.musal.it/webcam/" target="_blank"><?= $lang['link_utili_webcam'] ?></a></li>
               <li><a href="http://www.comune.canaledagordo.bl.it/myportal/C_B574/home" target="_blank"><?= $lang['link_utili_comune'] ?></a></li>
             </ul>
-          </div>
+          </div>-->
 
           <div id="v-d-g" class="hidden subpage">
             <h1>Valle di Gares</h1>

@@ -29,16 +29,33 @@
     "link_utili_comune" : "Comune di Canale d'Agordo",
 	
     "estate_titolo_sx" : "Attivit&agrave; estive",
-    "estate_sub_sx_1" : "Percosi ciclabili e parchi giochi",
-    "estate_sub_sx_2" : "<a href=\"files/rifugi.pdf\" target=\"_blank\">Escursioni e Rifugi</a>",
-    "estate_sub_sx_3" : "<a href=\"files/passeggiate.pdf\" target=\"_blank\">Passeggiate</a>",
+
+    "estate_sub_sx_1" : "<a href=\"files/passeggiate.pdf\" target=\"_blank\">Escursioni</a> e <a href=\"files/rifugi.pdf\" target=\"_blank\">Rifugi</a>",
+    "estate_cont_sx_1" : "La Valle del Biois offre numerose opportunità per gli appassionati della camminata in montagna e dell'escursionismo: dalle passeggiate per raggiungere le malghe di alpeggio ai rifugi in alta quota, dai sentieri in mezzo alla natura selvaggia ed incontaminata ai percorsi semplici e piacevoli lungo sentieri tematici dedicati. Per verificare la percorribilità dei sentieri in Agordino raccomandiamo di consultare il <a href=\"http://www.caiagordo.it\">sito ufficiale del CAI Agordo</a>.",
+
+    "estate_sub_sx_2" : "Bici da corsa Mountain Bike",
+    "estate_cont_sx_2" : "In tutta la Valle esistono svariati percorsi adatti alla bici da corsa e alla mountain bike. Le ciclabili che passano da Canale d'Agordo in direzione Falcade e Garés non sono asfaltate, pertanto si raccomanda la mountain bike o l'e-bike. Le frazioni alte di Carfon, Fregona e Feder si possono raggiungere dal capoluogo attraverso strade asfaltate, mentre i sentieri verso Malga Stia e altre baite in quota sono percorribili con la mountain bike oppure e-bike.<br>Presso i nostri uffici informazione è disponibile la cartina dei sentieri, alcuni dei quali fattibili con la bici.",
+
+    "estate_sub_sx_3" : "Percorsi ciclabili e parchi giochi",
+    "estate_cont_sx_3" : "<strong>Percorso ciclo-pedonale Canale d'Agordo - Caviola - Falcade</strong><br>Il percorso parte da Canale d'Agordo (Piazza Papa Luciani, attraverso via Cavallera/ via Crucis Papa Luciani) e prosegue lungo il torrente Biois in direzione di Caviola (zona parco giochi), fino alla suggestiva Piana di Falcade. Lunghezza ca. 5 km e dislivello ca. 400 m.<br><strong>Percorso ciclo-pedonale Canale d'Agordo - Valle di Garés</strong><br>Partendo dalla località Laonéi (via Soia- zona cimitero, proseguendo verso la Riserva di Caccia Alpina Canale), il percorso prosegue in direzione della Valle di Garès, lungo il torrente Liera, passando per le località Prade, Campiòn, Pian de Sabiòn (campeggio Lastèi) fino ad arrivare in località Pian de Giare, in fondo alla Valle di Garés. Lunghezza ca. 7 km e dislivello 300 m.<br><strong>Parco giochi di via Lotta</strong><br>Area giochi per bimbi e ragazzi, con campetto da calcio (pattinaggio durante la stagione invernale).<br><strong>Parco giochi di Caviola</strong><br>Area giochi con bar.<br><strong>Parco giochi di Falcade</strong><br>Area giochi sulla Piana, con laghetto, bar e gonfiabili (pattinaggio durante l'inverno).",
+
     "estate_sub_sx_4" : "Impianti di risalita",
-    "estate_sub_sx_5" : "Bici da corsa e Mountain Bike",
-    "estate_sub_sx_6" : "Noleggi attrezzatura",
-    "estate_sub_sx_7" : "Corsa",
-    "estate_sub_sx_8" : "Arrampicata",
-    "estate_sub_sx_9" : "Skiroll",
-    "estate_sub_sx_10" : "Nuoto",
+    "estate_cont_sx_4" : "<a href=\"https://www.skiareasanpellegrino.it/impianti-aperti-estate-2020\" target=\"_blank\">Comprensorio Falcade - San Pellegrino</a><br><a href=\"https://www.alleghefunivie.com/impianti-aperti-ski-civetta\" target=\"_blank\">Comprensorio Alleghe - Civetta</a><br><a href=\"http://www.funiviemarmolada.com/prezzi-estivi-3\" target=\"_blank\">Funivie Marmolada</a><br>",
+
+    "estate_sub_sx_5" : "Noleggi attrezzatura",
+    "estate_cont_sx_5" : "<a href=\"https://goo.gl/maps/k1AnPey4frjhP6BW9\" target=\"_blank\">Holiday Sport</a><br><a href=\"https://goo.gl/maps/FoToVuFmsncZCNAm7\" target=\"_blank\">Scuola Sci Equipe</a><br><a href=\"https://goo.gl/maps/7VL6enLs2agKwQLN6\" target=\"_blank\">Tarci Sport</a>",
+
+    "estate_sub_sx_6" : "<a href=\"files/corsa.pdf\" target=\"_blank\">Corsa</a>",
+    "estate_cont_sx_6" : "Anche per la corsa in montagna ci sono diverse proposte, dalle più semplici a quelle più impegnative su percorsi in salita",
+    
+    "estate_sub_sx_7" : "Arrampicata",
+    "estate_cont_sx_7" : "Per i percorsi si arrampicata, sia d'estate che d'inverno la Valle di Gares offre alcune proposte. Consigliamo sempre di rivolgersi all'<a href=\"http://www.travelsport.org/\" target=\"_blank\">ufficio guide Travelsport</a> per essere aggiornati sulle condizioni dei tracciati e su eventuali possibilità in zona alto agordino.",
+    
+    "estate_sub_sx_8" : "Skiroll",
+    "estate_cont_sx_8" : "Un'altra peculiarità della Valle di Gares sta nella lunga strada asfaltata (7 km) che dal capoluogo si inoltra verso le Pale di San Martino e le Comelle e che molti amanti di questo sport praticano d'estate. Non essendo molto trafficata rappresenta una proposta alternativa molto allettante e privilegiata, tanto che diversi gruppi sportivi locali e non la praticano con regolarità da diversi anni.",
+
+    "estate_sub_sx_9" : "<a href=\"https://www.facebook.com/pages/category/Stadium--Arena---Sports-Venue/Piscina-Palestra-Comprensoriale-Agordo-105137570863900/\" target=\"_blank\">Nuoto</a>",
+    "estate_cont_sx_9" : "Segnaliamo, inoltre, a circa 40 km, a Canazei il centro acquatico <a href=\"http://www.dolaondes.it\" target=\"_blank\">Dolaondes</a>, con piscine e saune edil centro termale <a href=\"http://www.qcterme.com\" target=\"_blank\">QC Terme Dolomiti</a>, a Pozza di Fassa.",
     
     "estate_titolo_dx" : "Informazioni utili",
     "estate_sub_dx_1" : "Raccolta regolamentata funghi",
@@ -116,6 +133,6 @@
     "footer_dove_trovarci" : "Proloco Canale d'Agordo",
     "footer_come_contattarci" : "Come contattarci",
     "footer_orari_ufficio_titolo" : "Orari ufficio",
-    "footer_orari_ufficio" : "Venerdi, sabato e domenica<br>9:00 - 12:00<br>15:00 - 18:00"
+    "footer_orari_ufficio" : "Tutti i giorni<br>9:00 - 12:30<br>15:30 - 18:30"
 
 }
