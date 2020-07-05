@@ -7,7 +7,7 @@
     "menu_cosa_vedere" : "Cosa vedere",
     "menu_cosa_vedere_il_paese" : "Il paese",
     "menu_cosa_vedere_valle_di_gares" : "Valle di Gares - Cascate",
-    "menu_cosa_vedere_valle_del_biois" : "Valle del Biois",
+    "menu_cosa_vedere_valle_del_biois" : "Valle coi Santi alle Finestre",
     "menu_cosa_vedere_via_crucis" : "Via Crucis Papa Luciani",
     "menu_cosa_vedere_negozi" : "Negozi",
     "menu_cosa_vedere_locali" : "Locali",
@@ -31,7 +31,7 @@
     "estate_titolo_sx" : "Attivit&agrave; estive",
 
     "estate_sub_sx_1" : "<a href=\"files/passeggiate.pdf\" target=\"_blank\">Escursioni</a> e <a href=\"files/rifugi.pdf\" target=\"_blank\">Rifugi</a>",
-    "estate_cont_sx_1" : "La Valle del Biois offre numerose opportunità per gli appassionati della camminata in montagna e dell'escursionismo: dalle passeggiate per raggiungere le malghe di alpeggio ai rifugi in alta quota, dai sentieri in mezzo alla natura selvaggia ed incontaminata ai percorsi semplici e piacevoli lungo sentieri tematici dedicati. Per verificare la percorribilità dei sentieri in Agordino raccomandiamo di consultare il <a href=\"http://www.caiagordo.it\">sito ufficiale del CAI Agordo</a>.",
+    "estate_cont_sx_1" : "La Valle del Biois offre numerose opportunità per gli appassionati della camminata in montagna e dell'escursionismo: dalle passeggiate per raggiungere le malghe di alpeggio ai rifugi in alta quota, dai sentieri in mezzo alla natura selvaggia ed incontaminata ai percorsi semplici e piacevoli lungo sentieri tematici dedicati. Per verificare la percorribilità dei sentieri in Agordino raccomandiamo di consultare il <a href=\"http://www.caiagordo.it\" target=\"_blank\">sito ufficiale del CAI Agordo</a>.<br><a href=\"files/escursioni_mauro_vattai.pdf\" target=\"_blank\">Proposte di escursione</a> con l'accompagnatore di media montagna Mauro Vattai.<br><a href=\"files/sentieristica_fondovalle.pdf\" target=\"_blank\">Sentieristica del fondovalle</a>",
 
     "estate_sub_sx_2" : "Bici da corsa Mountain Bike",
     "estate_cont_sx_2" : "In tutta la Valle esistono svariati percorsi adatti alla bici da corsa e alla mountain bike. Le ciclabili che passano da Canale d'Agordo in direzione Falcade e Garés non sono asfaltate, pertanto si raccomanda la mountain bike o l'e-bike. Le frazioni alte di Carfon, Fregona e Feder si possono raggiungere dal capoluogo attraverso strade asfaltate, mentre i sentieri verso Malga Stia e altre baite in quota sono percorribili con la mountain bike oppure e-bike.<br>Presso i nostri uffici informazione è disponibile la cartina dei sentieri, alcuni dei quali fattibili con la bici.",
@@ -57,12 +57,22 @@
     "estate_sub_sx_9" : "<a href=\"https://www.facebook.com/pages/category/Stadium--Arena---Sports-Venue/Piscina-Palestra-Comprensoriale-Agordo-105137570863900/\" target=\"_blank\">Nuoto</a>",
     "estate_cont_sx_9" : "Segnaliamo, inoltre, a circa 40 km, a Canazei il centro acquatico <a href=\"http://www.dolaondes.it\" target=\"_blank\">Dolaondes</a>, con piscine e saune edil centro termale <a href=\"http://www.qcterme.com\" target=\"_blank\">QC Terme Dolomiti</a>, a Pozza di Fassa.",
     
+
     "estate_titolo_dx" : "Informazioni utili",
+
     "estate_sub_dx_1" : "Raccolta regolamentata funghi",
+    "estate_cont_dx_1" : "La raccolta dei funghi in Valle del Biois è consentita previo permesso rilasciato al raccoglitore da parte dei seguenti esercizi del Comune di Canale d'Agordo:<br>Ass. Pro Loco Canale d'Agordo - Piazza Papa Luciani 4 - <a href=\"tel: 0437 1948030\" target=\"_blank\">0437 1948030</a><br>Bar Sport - Piazza Papa Luciani - <a href=\"tel: 0437 590530\" target=\"_blank\">0437 590530</a><br>Camping Lastei - Loc. Pian de Sabion - <a href=\"tel: 0437 590700\" target=\"_blank\">0437 590700</a><br>Bar Colmean - Loc. Colmean - <a href=\"tel: 0437 592078\" target=\"_blank\">0437 592078</a><br>Bar da Flora - Via Cime d'Auta (Caviola) - <a href=\"tel: 0437 501244\" target=\"_blank\">0437 501244</a><br>Rifugio Lagazzon - Loc. Lagazzon - <a href=\"tel: 0437 501135\" target=\"_blank\">0437 501135</a><br><strong>Costi:</strong><br>Permesso giornaliero € 8,00<br>Permesso settimanale € 15,00<br>Permesso mensile € 50,00<br>La raccolta è consentita nelle giornate di martedì, venerdì, domenica ed in tutte le festività infrasettimanali.",
+    
     "estate_sub_dx_2" : "Permessi per la pesca sportiva",
-    "estate_sub_dx_3" : "Orari Sante Messe",
-    "estate_sub_dx_4" : "Orari Ambulatori e Farmacie",
-    "estate_sub_dx_5" : "Raccolta rifiuti ed ecosportello",
+    "estate_cont_dx_2" : "I permessi di pesca vengono rilasciati dai seguenti esercizi del Comune di Canale d'Agordo:<br>Bar Sport - Piazza Papa Luciani - <a href=\"tel: 0437 590530\" target=\"_blank\">0437 590530</a>",
+
+    "estate_sub_dx_3" : "Sante Messe",
+    "estate_cont_dx_3" : "<strong>Parrocchia di CANALE D’AGORDO – Tel. <a href=\"tel: 0437 590280\" target=\"_blank\">0437 590280</a></strong><br>Feriale (Escluso il sabato): Chiesa Parrocchiale Ore 18:30<br>Sabato: Chiesa Parrocchiale Ore 9:00<br>Festiva: Chiesa Parrocchiale Ore 8:30 – 11:15 – 18:30<br><strong>Parrocchia di VALLADA AGORDINA – Tel. <a href=\"tel: 0437 590280\" target=\"_blank\">0437 590280</a></strong><br>Prefestiva: Sachet 18.30<br>Festiva: Sachet ore 10:00<br><strong>Parrocchia di CAVIOLA - Tel. <a href=\"tel: 0437 590164\" target=\"_blank\">0437 590164</a> Cell. <a href=\"tel: 328 1747318\" target=\"_blank\">328 1747318</a></strong><br>Prefestiva: Caviola ore 18:30, Sappade ore 17:00<br>Festiva: Caviola ore 8:00 - 10:00 - 18:30<br><strong>Parrocchia di FALCADE – Tel. <a href=\"tel: 0437 599018\" target=\"_blank\">0437 599018</a> Cell. <a href=\"tel: 320 4427979\" target=\"_blank\">320 4427979</a></strong><br>Prefestiva: Falcade Chiesa Parrocchiale ore 18:30<br>Festiva: Falcade Alto ore 8:30<br>Falcade Chiesa Parrocchiale ore 10:00 - (11:00 solo agosto) – 18:30<br><br>N.B. GLI ORARI POSSONO SUBIRE MODIFICHE verificare sul volantino settimanale della parrocchia.",
+
+    "estate_sub_dx_4" : "<a href=\"?search=Ambulatorio\">Ambulatori</a> e <a href=\"?search=Farmacia\">Farmacie</a>",
+
+    "estate_sub_dx_5" : "Raccolta rifiuti (<a href=\"/files/ecocalendario_centro.pdf\"target=\"_blank\">centro</a> - <a href=\"/files/ecocalendario_fuoricentro.pdf\"target=\"_blank\">fuoricentro</a>) ed ecosportello (<a href=\"/files/orari_ecocentri.pdf\"target=\"_blank\">orari</a>)",
+    "estate_cont_dx_5" : "L'ecosportello comunale di Canale d'Agordo si trova in via Lotta, zona parco giochi, nella casetta rossa presso la quale vi è anche la Sala agli Emigranti del Comune di Canale d'Agordo ed è aperto il venerdì dalle 9 alle 12.",
 
     "inverno_titolo_1" : "Escursioni",
     "inverno_sub_1_1" : "Impianti di risalita",
@@ -79,19 +89,22 @@
     "paese_p1" : "Canale d'Agordo, Forno di Canale fino al 1964, &egrave; uno dei paesi che compongono la Valle del Biois, in Agordino, a circa 50 km da Belluno.",
     "paese_p2" : "Il paese &egrave; ampliamente noto in quanto paese natale di <a target=\"_blank\" href=\"https://it.wikipedia.org/wiki/Papa_Giovanni_Paolo_I\">Albino Luciani (papa Giovanni Paolo I)</a>, oltre che del paesaggista Giuseppe Zais e del poeta Valerio Da Pos.",
     "paese_p3" : "Canale d'Agordo vanta ben 4 frazioni alte: Gares, Fregona, Feder, Carfon, dove il patrimonio rurale ed edilizio ha tutt'ora mantenuto viva la tipicit&agrave;  dei tabiai di montagna e la tradizione dello sfalcio e della cura del territorio.",
+    "paese_p4" : "A Canale d'Agordo don Antonio della Lucia fondò la prima latteria cooperativa d'Italia nel 1872 e sempre a Canale nacque una delle prime birrerie d'Italia (nel 1847), ad opera dei fratelli Zannini. A fine Ottocento la birreria fu appannaggio di un ramo della famiglia Luciani, trasferitasi a Pedavena ed esiste tutt'ora, anche se prettamente come ristorante e pizzeria.",
+    "paese_p5" : "Il centro storico di Canale d'Agordo &egrave; particolarmente ricco di monumenti ed opere storiche di rilievo, come l'antica Casa delle Regole del 1640 con, sul retro, il Giardino della Memoria, dedicato ai Caduti e dispersi in Russia durante il secondo conflitto mondiale. Degno di nota è il Museo Albino Luciani, MusAL, inaugurato il 26 agosto 2016 e gestito dalla Fondazione Papa Luciani Onlus, la quale- in collaborazione con la diocesi di Vittorio Veneto- gestisce anche la Casa natale di Papa Giovanni Paolo I.",
+    "paese_p6" : "Ricordiamo, infine, anche il Museo-Latteria di Feder, che ben riproduce l'antica latteria sorta a Cavallo tra Ottocento e Novecento nella frazione omonima, in concomitanza con lo sviluppo delle altre latterie di Carfon, Fregona e Gares.",
 
     "valle_di_gares_content_p1" : "La Valle di Gares &egrave; una valle di origine glaciale che si estende per ben 7 km dal capoluogo di Canale d'Agordo in  direzione delle Pale di San Martino (Tn).",
     "valle_di_gares_content_p2" : "Meta di escursionismo e frequente visita da parte dei turisti  e non che soggiornano in Valle del Biois, si presta alle pi&ugrave; svariate tipologie di pratica sportiva : dalla mountain bike, allo skiroll, dal nordic walking agli sport prettamente invernali come lo sci di fondo e l'arrampicata su ghiaccio.",
     "valle_di_gares_content_p3" : "Al termine della Valle, chiusa dalla catena delle Pale di San Martino, sono ben visibili e facilmente accessibili le cascate delle Comelle e diversi rifugi.",
     "valle_di_gares_content_p4" : "Qui sorsero tra il 1450 ed il 1748 le miniere del Sass  Negher, dalle quali venivano estratti principalmente rame e ferro. Il nome \"Forno di Canale\" fu, infatti, attribuito al Paese per la sua importanza come centro minerario e siderurgico dell'Agordino.",
-    "cascate_content_p1" : "Belle le cascate...",
-    "cascate_content_p2" : "Tant",
+    "cascate_content_p1" : "La Valle di Gares &egrave; una località ben nota anche per le bellissime cascate delle Comelle, visibili ad occhio nudo da località Pian de Giare.",
+    "cascate_content_p2" : "Le cascate sono due e per raggiungerle si segue il sentiero CAI nr. 704 che parte proprio in prossimità della Capanna Cima Comelle.",
     "biotopo_content_p1" : "In localit&agrave;  Pian de Giare (1381 m slm), &egrave; possibile passeggiare in prossimit&agrave;  del Laghetto di Gares. Questo &egrave; presente dal disgelo fino all'inizio della stagione invernale ed offre condizioni idonee per lo sviluppo di comunit&agrave;  idrofitiche, opportunit&agrave;  per la riproduzione degli anfibi e per il nutrimento di altre specie.",
     "biotopo_content_p2" : "Un'ambiente che &egrave; espressione di un insieme di realt&agrave;  vegetazionali e faunistiche insediate all'interno di spazi ed ambienti molto vari ed armoniosamente collegati fra di loro: la sorgente, il lago, il torrente, i boschi di conifere, il prato...",
     
-    "valle_del_biois_content_p1" : "La Valle del Biois, che si estende per 20 km dal Passo San Pellegrino fino a alla confluenza con il torrente Cordevole, comprende i Comuni di Falcade, Canale d'Agordo, Vallada Agordina e Cencenighe Agordino.",
-    "valle_del_biois_content_p2" : "Confina con la provincia autonoma di Trento e deve il suo nome al torrente Biois, che ha le proprie sorgenti al Passo di San Pellegrino (Moena). La Valle del Biois, nota anche con l'appellativo di  \"Valle coi Santi alle Finestre\", &egrave; ricca di storia e cultura, di personalit&agrave;  di rilievo in tutti in campi, dalla religione alla medicina, dall'arte allo sport e pu&ograve; vantare un patrimonio naturalistico riconosciuto a livello mondiale dall'UNESCO. I panorami che questi luoghi regalano al visitatore sono, infatti, di straordinaria ed unica bellezza.<br>Falcade &egrave; il centro sportivo per eccellenza con gli impianti che da localit&agrave;  Molino permettono di accedere ai collegamenti sciistici del Comprensorio della Ski Area San Pellegrino, con ben 60 km di piste.",
-    "valle_del_biois_content_p3" : "Canale d'Agordo, assieme a Vallada Agordina, &egrave; il centro culturale della Vallata e, in localit&agrave;  Gares pu&ograve; vantare anche un circuito di piste da fondo.<br>Cencenighe rappresenta il crocevia dei collegamenti tra la Valle del Biois e la Val Cordevole con il resto dell'Agordino e del Bellunese.",
+    "valle_del_biois_content_p1" : "Forse non tutti sanno che la Valle dei Biois &egrave; definita la valle \"coi santi alle finestre\", dati i numerosi affreschi ex voto di santi che sono dipinti sulle facciate delle abitazioni dei paesi.",
+    "valle_del_biois_content_p2" : "Canale d'Agordo riporta numerosissimi esempi di queste straordinarie testimonianze artistiche del XVII secolo, strettamente legate alla vita contadina e alle tradizioni rurali e religiose che permeavano la vita dei nostri luoghi.<br>Anche Falcade e Vallada conservano alcune di queste opere, che si sono conservate e che formano un itinerario dal prestigioso valore culturale, storico ed artistico.",
+    "valle_del_biois_content_p3" : "La gente del posto era solita rivolgersi ai Santi per ricevere qualche grazia, chiedere protezione o preservare l’edificio da possibili calamit&agrave;. Attreverso un finanziamento europeo e con il patrocinio della Regione Veneto è stato possibile mappare le opere e creare un percorso lungo i paesi di Canale d’Agordo, Falcade e Vallada alla scoperta dei \"Santi alle finestre\". Le cartine sono disponibili presso il nostro ufficio pro loco.",
     
     "via_crucis_p1" : "In occasione del trentennale dell'elezione e improvvisa morte di Papa Luciani, la comunit&agrave; di Canale d'Agordo ha ritenuto di ricordare un cos&igrave; importante anniversario erigendo una via Crucis lungo uno dei tracciati pi&ugrave; suggestivi del paese: la via Cavallera, con partenza da Piazza Papa Luciani. La via Crucis si compone di 15 stazioni con delle formelle in bronzo realizzate dall'artista Franco Murer che raffigurano i vari momenti della penitenza di Ges&ugrave;.",
     "via_crucis_p2" : "Un percorso emozionante e profondo, meta dei numerosi pellegrini e turisti che frequentano Canale d'Agordo sia in estate che in inverno.",
@@ -114,8 +127,6 @@
     "eventi_descrizione_sagra_gares" : "In fondo alla Valle di Gares ogni estate ad agosto si festeggia la Sagra del paese, con panini, bibite e allegra compagnia.",
     "eventi_mercatini" : "Mercatini hobbistica e artigianato",
     "eventi_descrizione_mercatini" : "Da oramai diversi anni l'Associazione Pro Loco si occupa di organizzare durante il periodo estivo (luglio ed agosto) le mostre-mercato di hobbistica, artigianato, antiquariato e prodotti tipici. Sempre molto apprezzati perché inseriti nella cornice affascinante e facilmente accessibile di Piazza Papa Luciani rappresentano una forma di intrattenimento molto apprezzata da turisti e non solo.<br>Accanto alle creazioni artigianali e fatte a mano di artisti e hobbisti, gli ultimi anni sono comparsi anche prodotti della terra, dalle patate alla farina, dal miele alle erbe officinali, prodotti per il corpo, tisane, infusi, ma anche seggiole di legno, segnatempo, quadri ed accessori di abbigliamento tipici come i tradizionali scarpét e lavori a maglia, tutto opera di artigiani e lavoratori che con passione si dedicano a quest'attività.",
-    "eventi_tiro_al_vof" : "Tiro al vof",
-    "eventi_descrizione_tiro_al_vof" : "",
     
     "nessun_risultato" : "Nessun risultato",
     "sito" : "Sito",

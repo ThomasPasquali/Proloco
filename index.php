@@ -414,13 +414,7 @@
               		<img src="imgs/Eventi/Zinghenesta.jpg"/>
               		<h1><?= $lang['eventi_zinghenesta'] ?></h1>
               		<p><?= $lang['eventi_descrizione_zinghenesta'] ?></p>
-              	</div>
-              	
-              	<div class="evento">
-              		<img src="imgs/Eventi/TiroAlVof.jpg"/>
-              		<h1><?= $lang['eventi_tiro_al_vof'] ?></h1>
-              		<p><?= $lang['eventi_descrizione_tiro_al_vof'] ?></p>
-              	</div>
+              	</div>              	
               	
               	<div class="evento">
               		<img src="imgs/Eventi/Cacciatori.jpg"/>
@@ -469,9 +463,7 @@
           
           <div id="paese" class="hidden subpage">
           	  <h1><?= $lang['paese_title'] ?></h1>
-              <p><?= $lang['paese_p1'] ?></p>
-              <p><?= $lang['paese_p2'] ?></p>
-              <p><?= $lang['paese_p3'] ?></p>
+              <?php $i = 1; while(isset($lang["paese_p$i"])) echo '<p>'.$lang["paese_p$i"].'</p>'; ?>
     
               <!-- #region Jssor Slider Start -->
               <div id="jssor_home" style="position:relative;margin:0 auto;top:0px;left:0px;width:650px;height:380px;overflow:hidden;visibility:hidden;">
@@ -543,7 +535,7 @@
 
               <div id="link_trasporti">
                 <h2 data-toggle="tooltip" data-placement="bottom" title="<?= $lang['provincia_di_Belluno'] ?>">
-                  <a href="https://dolomitibus.it/files/orari/invernali/extra/Agordino/Linea2_I.pdf" target="_blank">
+                  <a href="https://dolomitibus.it/it/linee-extraurbane-invernali-coronavirus" target="_blank">
                     <?= $lang['orari_dolomitibus'] ?>
                   </a>
                 </h2>
@@ -577,7 +569,7 @@
                     <h4><?= $lang['footer_dove_trovarci'] ?>:<img src="imgs/placeholder.svg" class="icon"></h4>
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Piazza Papa Luciani, 4</a></p>
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Canale d'Agordo (BL) - 32020</a></p>
-                    <p>P.IVA 13246578901</p>
+                    <p>P.IVA 00838420255</p>
                   </div>
                   
                   <div class="col">
@@ -591,8 +583,9 @@
                     <p><img src="imgs/email.svg" class="icon"><a href="mailto: info@prolococanale.it" target="_blank">info@prolococanale.it</a></p>
                     <p>Facebook: <a href="https://it-it.facebook.com/pages/category/Community/Pro-Loco-Canale-dAgordo-653270708142524/" target="_blank">Proloco Canale d'Agordo</a></p>
                   </div>
-
                 </div>
+
+                <p style="font-size: 13px;">Made By Thomas P.</p>
 
               </div>
             </footer>
