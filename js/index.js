@@ -1,6 +1,6 @@
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-})
+$(function () { $('[data-toggle="tooltip"]').tooltip(); });
+
+window.addEventListener("beforeunload", function() { alert('dfssdfdfs');location.replace("/"); })
 
 $(document).ready(function () {
 
@@ -21,6 +21,16 @@ $(document).ready(function () {
         navbar.removeClass("hide-menu").addClass("show-menu");
       }
       c = currentScrollTop;
+  });
+
+  
+
+  /************ASYNC IMAGES*************/
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+       img.removeAttribute('data-src');
+    };
   });
 
 });

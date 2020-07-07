@@ -27,7 +27,8 @@
     "link_utili_impianti" : "Impianti di risalita",
     "link_utili_webcam" : "Webcam",
     "link_utili_comune" : "Comune di Canale d'Agordo",
-	
+    
+    
     "estate_titolo_sx" : "Attivit&agrave; estive",
 
     "estate_sub_sx_1" : "<a href=\"files/passeggiate.pdf\" target=\"_blank\">Escursioni</a> e <a href=\"files/rifugi.pdf\" target=\"_blank\">Rifugi</a>",
@@ -57,7 +58,6 @@
     "estate_sub_sx_9" : "<a href=\"https://www.facebook.com/pages/category/Stadium--Arena---Sports-Venue/Piscina-Palestra-Comprensoriale-Agordo-105137570863900/\" target=\"_blank\">Nuoto</a>",
     "estate_cont_sx_9" : "Segnaliamo, inoltre, a circa 40 km, a Canazei il centro acquatico <a href=\"http://www.dolaondes.it\" target=\"_blank\">Dolaondes</a>, con piscine e saune edil centro termale <a href=\"http://www.qcterme.com\" target=\"_blank\">QC Terme Dolomiti</a>, a Pozza di Fassa.",
     
-
     "estate_titolo_dx" : "Informazioni utili",
 
     "estate_sub_dx_1" : "Raccolta regolamentata funghi",
@@ -74,17 +74,20 @@
     "estate_sub_dx_5" : "Raccolta rifiuti (<a href=\"/files/ecocalendario_centro.pdf\"target=\"_blank\">centro</a> - <a href=\"/files/ecocalendario_fuoricentro.pdf\"target=\"_blank\">fuoricentro</a>) ed ecosportello (<a href=\"/files/orari_ecocentri.pdf\"target=\"_blank\">orari</a>)",
     "estate_cont_dx_5" : "L'ecosportello comunale di Canale d'Agordo si trova in via Lotta, zona parco giochi, nella casetta rossa presso la quale vi è anche la Sala agli Emigranti del Comune di Canale d'Agordo ed è aperto il venerdì dalle 9 alle 12.",
 
-    "inverno_titolo_1" : "Escursioni",
-    "inverno_sub_1_1" : "Impianti di risalita",
-    "inverno_sub_1_2" : "Rifugi",
-    "inverno_sub_1_3" : "Proposte",
 
-    "inverno_titolo_2" : "Sport e attivit&agrave;",
-    "inverno_sub_2_1" : "Bici e Mountain Bike",
-    "inverno_sub_2_2" : "Sci nordico",
-    "inverno_sub_2_3" : "Sci alpino",
-    "inverno_sub_2_4" : "Pattinaggio",
-	
+    "inverno_titolo_dx" : "Escursioni",
+
+    "inverno_sub_dx_1" : "Impianti di risalita",
+    "inverno_sub_dx_2" : "Rifugi",
+    "inverno_sub_dx_3" : "Proposte",
+
+    "inverno_titolo_sx" : "Sport e attivit&agrave;",
+
+    "inverno_sub_sx_1" : "Sci nordico",
+    "inverno_sub_sx_2" : "Sci alpino",
+    "inverno_sub_sx_3" : "Pattinaggio",
+    
+    
     "paese_title" : "Il paese",
     "paese_p1" : "Canale d'Agordo, Forno di Canale fino al 1964, &egrave; uno dei paesi che compongono la Valle del Biois, in Agordino, a circa 50 km da Belluno.",
     "paese_p2" : "Il paese &egrave; ampliamente noto in quanto paese natale di <a target=\"_blank\" href=\"https://it.wikipedia.org/wiki/Papa_Giovanni_Paolo_I\">Albino Luciani (papa Giovanni Paolo I)</a>, oltre che del paesaggista Giuseppe Zais e del poeta Valerio Da Pos.",

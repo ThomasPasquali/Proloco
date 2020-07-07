@@ -245,7 +245,7 @@
 }
 
 .result {
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.9);
     border-radius: 15%;
     white-space: pre-line;
     padding: 3% 5% 3% 5%;
@@ -286,7 +286,7 @@
 }
 
 .subpage {
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.9);
     border-radius: 5%;
     white-space: pre-line;
     padding: 0 5% 0 5%;
@@ -303,7 +303,7 @@
 }
 
 #link_trasporti {
-    background-color: rgba(255,255,255,0.85);
+    background-color: rgba(255,255,255,0.9);
     padding: 20px;
     text-align: center;
     display: flex;
@@ -375,4 +375,14 @@
 
 #home-estate .container h2 {
     font-weight: bold;
+}
+
+img[data-src]::before {
+    content: 'Loading...';
+}
+
+.carousel {
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }
