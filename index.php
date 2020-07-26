@@ -197,23 +197,23 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <h1><?= $lang['estate_titolo_sx'] ?></h1>
+                                    <h1 style="text-decoration: underline;"><?= $lang['estate_titolo_sx'] ?></h1>
                                     <?php
                                     $i = 1;
                                     while(isset($lang['estate_sub_sx_'.$i])) {
-                                        echo '<h2>'.$lang['estate_sub_sx_'.($i)].'</h2>';
-                                        echo '<p>'.($lang['estate_cont_sx_'.($i++)]??'').'</p>';
+                                        echo '<h2 class="collapsible">'.$lang['estate_sub_sx_'.($i)].'</h2>';
+                                        echo '<div class="collapsible-content"><p>'.($lang['estate_cont_sx_'.($i++)]??'').'</p></div>';
                                     }
                                     ?>
                                 </div>
 
                                 <div class="col">
-                                    <h1><?= $lang['estate_titolo_dx'] ?></h1>
+                                    <h1 style="text-decoration: underline;"><?= $lang['estate_titolo_dx'] ?></h1>
                                     <?php
                                     $i = 1;
                                     while(isset($lang['estate_sub_dx_'.$i])) {
-                                        echo '<h2>'.$lang['estate_sub_dx_'.($i)].'</h2>';
-                                        echo '<p>'.($lang['estate_cont_dx_'.($i++)]??'').'</p>';
+                                        echo '<h2 class="collapsible">'.$lang['estate_sub_dx_'.($i)].'</h2>';
+                                        echo '<div class="collapsible-content"><p>'.($lang['estate_cont_dx_'.($i++)]??'').'</p></div>';
                                     }
                                     ?>
                                 </div>
@@ -445,6 +445,7 @@
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Piazza Papa Luciani, 4</a></p>
                     <p><a href="https://goo.gl/maps/n3VBYFqa3E56UAcn8" target="_blank">Canale d'Agordo (BL) - 32020</a></p>
                     <p>P.IVA 00838420255</p>
+                    <p>C.F. 80009980253</p>
                   </div>
                   
                   <div class="col">
