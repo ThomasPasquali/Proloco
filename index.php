@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     define('DEF_LANG', 'IT');
 
     $lang = NULL;
@@ -352,6 +352,12 @@
                                 <h1><?= $lang['eventi_mercatini'] ?></h1>
                                 <p><?= $lang['eventi_descrizione_mercatini'] ?></p>
                             </div>
+
+			    <div class="evento">
+                                <img data-src="imgs/Eventi/Papa.jpg"/>
+                                <h1><?= $lang['eventi_papa'] ?></h1>
+                                <p><?= $lang['eventi_descrizione_papa'] ?></p>
+                            </div>
                             
                         </div>
                     </div>
@@ -380,7 +386,7 @@
                         <div class="result">
                             <h2><?= $res['Nome'] ?></h2>
                             <?= $res['Foto']?"<img src=\"imgs/dbImgs/$res[Foto]\">":'' ?>
-                            <?= $res['Descrizione']?"<p class=\"descrizione\">".$res['Descrizione']."</p>":'' ?>
+                            <?= $res['Descrizione']?"<p class=\"descrizione justifyed\">".$res['Descrizione']."</p>":'' ?>
 
                             <?php if($res['Sito']||$res['Maps']||$res['Email']||$res['Telefono']) { ?>
                                     <div class="inline-grid">
