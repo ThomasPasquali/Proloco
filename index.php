@@ -2,7 +2,7 @@
     define('DEF_LANG', 'IT');
 
     $lang = NULL;
-    $dir = __DIR__;
+    $dir = str_replace('\\','/',__DIR__);
 
     /*TODO uncomment for language control
     //Se settato parametro lang
@@ -40,16 +40,20 @@
 
     //DB zone
     include_once 'lib/db.php';
-    if(DB::check(['search'], $_REQUEST)) {
-        ini_set('display_errors', 0);
-        try {
-            $db = new DB($dir.'/../db.ini');
-        } catch (Exception $e) {
-            header('Content-type: text/txt;');
-            echo 'Specificare il file ini';
-            exit();
-        }
+    ini_set('display_errors', 0);
+    try {
+        $db = new DB($dir.'/../db.ini');
+    } catch (Exception $e) {
+        header('Content-type: text/txt;');
+        echo 'Specificare il file ini';
+        exit();
+    }
 
+    //Access log
+    $db->dml("INSERT INTO access_log (IP) VALUES ('$_SERVER[REMOTE_ADDR]')");
+
+    if(DB::check(['search'], $_REQUEST)) {
+        //Ricerche
         $types = explode(',', $_REQUEST['search']);
         $results = $db->ql("SELECT * FROM strutture WHERE Tipo IN (?".str_repeat(',?', count($types)-1).')', $types);
     }
