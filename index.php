@@ -233,23 +233,23 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <h1><?= $lang['inverno_titolo_sx'] ?></h1>
+                                    <h1 style="text-decoration: underline;"><?= $lang['inverno_titolo_sx'] ?></h1>
                                     <?php
                                     $i = 1;
                                     while(isset($lang['inverno_sub_sx_'.$i])) {
-                                        echo '<h2>'.$lang['inverno_sub_sx_'.($i)].'</h2>';
-                                        echo '<p>'.($lang['inverno_cont_sx_'.($i++)]??'').'</p>';
+                                        echo '<h2 class="collapsible">'.$lang['inverno_sub_sx_'.($i)].'</h2>';
+                                        echo '<div class="collapsible-content"><p>'.($lang['inverno_cont_sx_'.($i++)]??'').'</p></div>';
                                     }
                                     ?>
                                 </div>
 
                                 <div class="col">
-                                    <h1><?= $lang['inverno_titolo_dx'] ?></h1>
+                                    <h1 style="text-decoration: underline;"><?= $lang['inverno_titolo_dx'] ?></h1>
                                     <?php
                                     $i = 1;
                                     while(isset($lang['inverno_sub_dx_'.$i])) {
-                                        echo '<h2>'.$lang['inverno_sub_dx_'.($i)].'</h2>';
-                                        echo '<p>'.($lang['inverno_cont_dx_'.($i++)]??'').'</p>';
+                                        echo '<h2 class="collapsible">'.$lang['inverno_sub_dx_'.($i)].'</h2>';
+                                        echo '<div class="collapsible-content"><p>'.($lang['inverno_cont_dx_'.($i++)]??'').'</p></div>';
                                     }
                                     ?>
                                 </div>
@@ -258,7 +258,7 @@
                             <div class="row"><?php createSlider('Home/Inverno'); ?></div>
                         </div>
                     </div>
-                    <!-- END INVERNO ESTATE -->
+                    <!-- END PAGINA INVERNO -->
 
                     <!-- PAGINA VALLE DI GARES -->
                     <div id="v-d-g" class="hidden subpage">
@@ -296,7 +296,7 @@
                         <h1>Via Crucis</h1>
                         <p><?= $lang['via_crucis_p1'] ?></p>
                         <p><?= $lang['via_crucis_p2'] ?></p>
-                        <img data-src="imgs/ViaCrucis/ViaCrucis.jpg"/>
+                        <?php createSlider('ViaCrucis'); ?>
                     </div>
                     <!-- END PAGINA VIA CRUCIS -->
 
@@ -394,10 +394,10 @@
 
                             <?php if($res['Sito']||$res['Maps']||$res['Email']||$res['Telefono']) { ?>
                                     <div class="inline-grid">
-                                    <?= $res['Sito']?"<p class=\"sito\"><a href=\"$res[Sito]\">".$lang['sito']."</a></p>":'' ?>
-                                    <?= $res['Maps']?"<p class=\"mappa\"><a href=\"$res[Maps]\">".$lang['come_arrivarci']."</a></p>":'' ?>
-                                    <?= $res['Email']?"<p class=\"email\"><a href=\"mailto:$res[Email]\">".$lang['email']."</a></p>":'' ?>
-                                    <?= $res['Telefono']?"<p class=\"telefono\"><a href=\"tel:$res[Telefono]\">".$lang['telefono'].$res['Telefono']."</a></p>":'' ?>
+                                    <?= $res['Sito']?"<p class=\"sito\"><a href=\"$res[Sito]\" target=\"_blank\">".$lang['sito']."</a></p>":'' ?>
+                                    <?= $res['Maps']?"<p class=\"mappa\"><a href=\"$res[Maps]\" target=\"_blank\">".$lang['come_arrivarci']."</a></p>":'' ?>
+                                    <?= $res['Email']?"<p class=\"email\"><a href=\"mailto: $res[Email]\">".$lang['email']."</a></p>":'' ?>
+                                    <?= $res['Telefono']?"<p class=\"telefono\"><a href=\"tel: $res[Telefono]\">".$lang['telefono'].$res['Telefono']."</a></p>":'' ?>
                                     </div> <?php
                                 } ?>
                             
