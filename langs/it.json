@@ -71,24 +71,34 @@
 
     "estate_sub_dx_4" : "<a href=\"?search=Ambulatorio\">Ambulatori</a> e <a href=\"?search=Farmacia\">Farmacie</a>",
 
-    "estate_sub_dx_5" : "Raccolta rifiuti (<a href=\"/files/ecocalendario_centro.pdf\"target=\"_blank\">centro</a> - <a href=\"/files/ecocalendario_fuoricentro.pdf\"target=\"_blank\">fuoricentro</a>) ed ecosportello (<a href=\"/files/orari_ecocentri.pdf\"target=\"_blank\">orari</a>)",
+    "estate_sub_dx_5" : "Raccolta rifiuti (<a href=\"/files/ecocalendario_centro.pdf\" target=\"_blank\">centro</a> - <a href=\"/files/ecocalendario_fuoricentro.pdf\"target=\"_blank\">fuoricentro</a>) ed ecosportello (<a href=\"/files/orari_ecocentri.pdf\"target=\"_blank\">orari</a>)",
     "estate_cont_dx_5" : "L'ecosportello comunale di Canale d'Agordo si trova in via Lotta, zona parco giochi, nella casetta rossa presso la quale vi è anche la Sala agli Emigranti del Comune di Canale d'Agordo ed è aperto il venerdì dalle 9 alle 12.",
     
     "estate_sub_dx_6" : "Contatti utili",
     "estate_cont_dx_6" : "<strong>Meccanici</strong><br>Autofficina De Nardin (Cencenighe) <a href=\"tel: 0437 581921\" target=\"_blank\">Chiama</a><br>Carrozzeria Agordina (Cencenighe) <a href=\"tel: 333 9799448\" target=\"_blank\">Chiama</a><br>Autofficina Da Pian (Alleghe) <a href=\"tel: 0437 523358\" target=\"_blank\">Chiama</a><br>Autofficina Bellenzier (Masare’ Di Alleghe) <a href=\"tel: 0437 523540\" target=\"_blank\">Chiama</a><br>Autofficina Dai Pra Ermes (Taibon Ag.) <a href=\"tel: 0437 660195\" target=\"_blank\">Chiama</a><br>Auto Car San Lucano (Taibon Ag.) <a href=\"tel: 0437 660308\" target=\"_blank\">Chiama</a><br>Carrozzeria Bulf (Taibon Ag.) <a href=\"tel: 0437 63717\" target=\"_blank\">Chiama</a><br>Autofficina Schena Lino (Agordo) <a href=\"tel: 0437 62494\" target=\"_blank\">Chiama</a><br>Bersaglio Mobile – Soccorso Stradale (Agordo) <a href=\"tel: 0437 641305\" target=\"_blank\">Chiama</a><br>Autofficina Paganin (Agordo) <a href=\"tel: 0437 62413\" target=\"_blank\">Chiama</a><br><strong>Idraulici</strong><br>Felice Busin <a href=\"tel: 0437 507039\" target=\"_blank\">Chiama</a><br>Maurizio <a href=\"tel: 0437 507137\" target=\"_blank\">Chiama</a><br>Termoidraulica  <a href=\"tel: 338 4925734\" target=\"_blank\">Chiama</a><br>Cagnati Giuseppe <a href=\"tel: 348 4065390\" target=\"_blank\">Chiama</a>",
 
 
-    "inverno_titolo_dx" : "Escursioni",
+    "inverno_titolo_sx" : "Attivit&agrave; invernali",
 
-    "inverno_sub_dx_1" : "Impianti di risalita",
-    "inverno_sub_dx_2" : "Rifugi",
-    "inverno_sub_dx_3" : "Proposte",
+    "inverno_sub_sx_1" : "Comprensorio sciistico ed impianti di risalita",
+    "inverno_cont_sx_1" : "Durante la stagione invernale la Valle del Biois offre un collegamento diretto con il Comprensorio sciistico Falcade- San Pellegrino, attraverso gli impianti di risalita che partono dalla Località Molino di Falcade.<br>A soli 20 km da Canale d'Agordo è possibile, inoltre, raggiungere la ski area Civetta, punto di transito del Giro sciistico della Grande Guerra, mentre i collegamenti con la Marmolada ed Arabba si trovano a circa una quarantina di minuti d'auto.<br>Di seguito alcune informazioni più specifiche a seconda dei Comprensori:<br><a href=\"https://www.skiareasanpellegrino.it/inverno/\" target=\"_blank\">Ski Area Falcade - San Pellegrino</a><br><a href=\"http://www.alleghefunivie.com/inverno/\" target=\"_blank\">Alleghe Funivie</a><br><a href=\"https://www.funiviemarmolada.com/skipass-dolomiti-superski/\" target=\"_blank\">Funivie Marmolada</a>",
 
-    "inverno_titolo_sx" : "Sport e attivit&agrave;",
+    "inverno_sub_sx_2" : "Passeggiate ed escursioni",
+    "inverno_cont_sx_2" : "Anche d’inverno la Valle del Biois permette agli amanti dell’escursionismo di cimentarsi in passeggiate ecamminate nel bosco, oppure in quota, lungo itinerari più o meno difficili che soddisfano tutte leesigenze.<br>Alcuni rifugi e malghe sono aperti solamente in estate, mentre altri anche d’inverno.<br>Quando la neve lo permette è, inoltre possibile percorrere alcuni tracciati muniti di racchette da neve(ciaspe) e bastoncini e, dove il fondo è ghiacciato si consigliano i ramponcini. (allegare file CIASPE).Presso la Capanna Cima Comelle o presso i negozi sportivi di Falcade è possibile il noleggio delle ciaspe.Consigliamo di rivolgersi ai nostri uffici informazione per farsi consigliare sui percorsi migliori dasvolgere in inverno.<br>Nella lista dei rifugi troverete coloro che hanno apertura annuale, estiva o invernale.",
 
-    "inverno_sub_sx_1" : "Sci nordico",
-    "inverno_sub_sx_2" : "Sci alpino",
-    "inverno_sub_sx_3" : "Pattinaggio",
+    "inverno_sub_sx_3" : "Sci nordico",
+    "inverno_cont_sx_3" : "In Valle del Biois vi sono due centri importanti per la pratica dello sci nordico: uno si trova a Canale d’Agordo, in fondo alla maestosa Valle di Garés. Un altro sulla Piana di Falcade.<br>Il primo, centro “Franco Manfroi”, ha un tracciato che si snoda per 7,5 km con vari anelli intermedi di diverse difficoltà.<br>Per informazioni: Capanna Cima Comelle <a href=\"tel: 043760049\">0437 60049</a><br>Il secondo, dedicato a Pietro Scola, è una pista articolata in tre livelli di difficoltà. Per informazioni: <a href=\"tel: 0437599441\">0437 599441</a> - <a href=\"tel: 3285644023\">328 5644023</a><br>Le cartine sono disponibili presso il nostro ufficio Pro Loco.",
+
+    "inverno_sub_sx_4" : "Pattinaggio su ghiacchio",
+    "inverno_cont_sx_4" : "A Canale d’Agordo, <a href=\"https://goo.gl/maps/kG4FuSRUEDeN3dmt6in\" target=\"_blank\">via Lotta</a>, nella zona Parco giochi, viene solitamente allestito un campo da ghiaccio all’aperto, aperto sotto il periodo delle festività natalizie, con possibilità di noleggio pattini.<br>Informazioni ed orari presso l’ufficio Pro Loco di canale d’Agordo.<br>A Falcade, presso il <a href=\"https://goo.gl/maps/9QVbzorkrWrdDQa89\" target=\"_blank\">Bar al Parco</a>, c’è un altro campo da ghiaccio all’aperto, con possibilità di noleggiopattini.<br>Per informazioni su orari e costi: Centro Fondo Falcade <a href=\"tel: 0437599441\">0437 599441</a> oppure <a href=\"tel: 3483942460\">348 3942460</a>.",
+
+    "inverno_sub_sx_5" : "<a href=\"?search=Noleggio\">Noleggi sci ed attrezzatura invernale (ciaspole, bastoncini etc.)</a>",
+    "inverno_cont_sx_5" : "",
+
+    "inverno_titolo_dx" : "Informazioni utili",
+
+    "inverno_sub_dx_1" : "",
+    "inverno_cont_dx_1" : "",
     
     
     "paese_title" : "Il paese",
