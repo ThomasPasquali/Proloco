@@ -422,3 +422,7 @@ img[data-src]::before {
     text-align: justify;
     text-justify: inter-word;
 }
+
+.grassetto {
+    font-weight: bold;
+}

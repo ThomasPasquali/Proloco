@@ -47,7 +47,7 @@
     "estate_cont_sx_5" : "<a href=\"https://goo.gl/maps/k1AnPey4frjhP6BW9\" target=\"_blank\">Holiday Sport</a><br><a href=\"https://goo.gl/maps/FoToVuFmsncZCNAm7\" target=\"_blank\">Scuola Sci Equipe</a><br><a href=\"https://goo.gl/maps/7VL6enLs2agKwQLN6\" target=\"_blank\">Tarci Sport</a>",
 
     "estate_sub_sx_6" : "<a href=\"files/corsa.pdf\" target=\"_blank\">Corsa</a>",
-    "estate_cont_sx_6" : "Anche per la corsa in montagna ci sono diverse proposte, dalle più semplici a quelle più impegnative su percorsi in salita. Presso il nostro ufficio pro loco &egrave possibile ricevere la cartina dei percorsi e delle iniziative di corsa in montagna. Ricordiamo, inoltre, che nel 2021 Canale d'Agordo ospiter&agrave il Trofeo 16 Comuni dell'Agordino.",
+    "estate_cont_sx_6" : "Anche per la corsa in montagna ci sono diverse proposte, dalle più semplici a quelle più impegnative su percorsi in salita. <br>Presso il nostro ufficio pro loco &egrave possibile ricevere la cartina dei percorsi e delle iniziative di corsa in montagna. <br>Ricordiamo, inoltre, che nel 2021 Canale d'Agordo ospiter&agrave il Trofeo 16 Comuni dell'Agordino.",
     
     "estate_sub_sx_7" : "Arrampicata",
     "estate_cont_sx_7" : "Per i percorsi si arrampicata, sia d'estate che d'inverno la Valle di Gares offre alcune proposte. Consigliamo sempre di rivolgersi all'<a href=\"http://www.travelsport.org/\" target=\"_blank\">ufficio guide Travelsport</a> per essere aggiornati sulle condizioni dei tracciati e su eventuali possibilità in zona alto agordino.",
@@ -81,24 +81,21 @@
     "inverno_titolo_sx" : "Attivit&agrave; invernali",
 
     "inverno_sub_sx_1" : "Comprensorio sciistico ed impianti di risalita",
-    "inverno_cont_sx_1" : "Durante la stagione invernale la Valle del Biois offre un collegamento diretto con il Comprensorio sciistico Falcade- San Pellegrino, attraverso gli impianti di risalita che partono dalla Località Molino di Falcade.<br>A soli 20 km da Canale d'Agordo è possibile, inoltre, raggiungere la ski area Civetta, punto di transito del Giro sciistico della Grande Guerra, mentre i collegamenti con la Marmolada ed Arabba si trovano a circa una quarantina di minuti d'auto.<br>Di seguito alcune informazioni più specifiche a seconda dei Comprensori:<br><a href=\"https://www.skiareasanpellegrino.it/inverno/\" target=\"_blank\">Ski Area Falcade - San Pellegrino</a><br><a href=\"http://www.alleghefunivie.com/inverno/\" target=\"_blank\">Alleghe Funivie</a><br><a href=\"https://www.funiviemarmolada.com/skipass-dolomiti-superski/\" target=\"_blank\">Funivie Marmolada</a>",
+    "inverno_cont_sx_1" : "Durante la stagione invernale la Valle del Biois offre un collegamento diretto con il <span class=\"grassetto\">Comprensorio sciistico Falcade- San Pellegrino</span>, attraverso gli impianti di risalita che partono dalla Località <span class=\"grassetto\">Molino di Falcade</span>.<br>A soli 20 km da Canale d'Agordo è possibile, inoltre, raggiungere la <span class=\"grassetto\">Ski Area Civetta</span>, punto di transito del Giro sciistico della Grande Guerra, mentre i collegamenti con la <span class=\"grassetto\">Marmolada</span> ed <span class=\"grassetto\">Arabba</span> si trovano a circa una quarantina di minuti d'auto.<br>Di seguito alcune informazioni più specifiche a seconda dei Comprensori:<br><a href=\"https://www.skiareasanpellegrino.it/inverno/\" target=\"_blank\">Ski Area Falcade - San Pellegrino</a><br><a href=\"http://www.alleghefunivie.com/inverno/\" target=\"_blank\">Alleghe Funivie</a><br><a href=\"https://www.funiviemarmolada.com/skipass-dolomiti-superski/\" target=\"_blank\">Funivie Marmolada</a>",
 
     "inverno_sub_sx_2" : "Passeggiate ed escursioni",
-    "inverno_cont_sx_2" : "Anche d’inverno la Valle del Biois permette agli amanti dell’escursionismo di cimentarsi in passeggiate ecamminate nel bosco, oppure in quota, lungo itinerari più o meno difficili che soddisfano tutte leesigenze.<br>Alcuni rifugi e malghe sono aperti solamente in estate, mentre altri anche d’inverno.<br>Quando la neve lo permette è, inoltre possibile percorrere alcuni tracciati muniti di racchette da neve(ciaspe) e bastoncini e, dove il fondo è ghiacciato si consigliano i ramponcini. (allegare file CIASPE).Presso la Capanna Cima Comelle o presso i negozi sportivi di Falcade è possibile il noleggio delle ciaspe.Consigliamo di rivolgersi ai nostri uffici informazione per farsi consigliare sui percorsi migliori dasvolgere in inverno.<br>Nella lista dei rifugi troverete coloro che hanno apertura annuale, estiva o invernale.",
+    "inverno_cont_sx_2" : "Anche d’inverno la Valle del Biois permette agli amanti dell’escursionismo di cimentarsi in passeggiate e camminate nel bosco, oppure in quota, lungo itinerari più o meno difficili che soddisfano tutte le esigenze.<br>Alcuni rifugi e malghe sono aperti solamente in estate, mentre altri anche d’inverno.<br>Quando la neve lo permette è, inoltre possibile percorrere alcuni tracciati muniti di <span class=\"grassetto\">racchette da neve (ciaspe)</span> e bastoncini e, dove il fondo è ghiacciato si consigliano i ramponcini. (allegare file CIASPE). Presso la Capanna Cima Comelle o presso i negozi sportivi di Falcade è possibile il noleggio delle ciaspe. Consigliamo di rivolgersi ai nostri uffici informazione per farsi consigliare sui percorsi migliori da svolgere in inverno.<br>Nella lista dei <span class=\"grassetto\">rifugi</span> troverete coloro che hanno apertura annuale, estiva o invernale.",
 
     "inverno_sub_sx_3" : "Sci nordico",
-    "inverno_cont_sx_3" : "In Valle del Biois vi sono due centri importanti per la pratica dello sci nordico: uno si trova a Canale d’Agordo, in fondo alla maestosa Valle di Garés. Un altro sulla Piana di Falcade.<br>Il primo, centro “Franco Manfroi”, ha un tracciato che si snoda per 7,5 km con vari anelli intermedi di diverse difficoltà.<br>Per informazioni: Capanna Cima Comelle <a href=\"tel: 043760049\">0437 60049</a><br>Il secondo, dedicato a Pietro Scola, è una pista articolata in tre livelli di difficoltà. Per informazioni: <a href=\"tel: 0437599441\">0437 599441</a> - <a href=\"tel: 3285644023\">328 5644023</a><br>Le cartine sono disponibili presso il nostro ufficio Pro Loco.",
+    "inverno_cont_sx_3" : "In Valle del Biois vi sono due centri importanti per la pratica dello sci nordico: uno si trova a Canale d’Agordo, in fondo alla maestosa Valle di Garés. Un altro sulla Piana di Falcade.<br>Il primo, <span class=\"grassetto\">centro “Franco Manfroi”</span>, ha un tracciato che si snoda per 7,5 km con vari anelli intermedi di diverse difficoltà.<br>Per informazioni: Capanna Cima Comelle <a href=\"tel: 043760049\">0437 60049</a><br>Il secondo, dedicato a <span class=\"grassetto\">Pietro Scola</span>, è una pista articolata in tre livelli di difficoltà. Per informazioni: <a href=\"tel: 0437599441\">0437 599441</a> - <a href=\"tel: 3285644023\">328 5644023</a><img data-src=\"imgs/Home/Inverno/cartina_fondo_gares.jpg\"><img data-src=\"imgs/Home/Inverno/cartina_fondo_falcade.jpg\">",
 
     "inverno_sub_sx_4" : "Pattinaggio su ghiacchio",
-    "inverno_cont_sx_4" : "A Canale d’Agordo, <a href=\"https://goo.gl/maps/kG4FuSRUEDeN3dmt6in\" target=\"_blank\">via Lotta</a>, nella zona Parco giochi, viene solitamente allestito un campo da ghiaccio all’aperto, aperto sotto il periodo delle festività natalizie, con possibilità di noleggio pattini.<br>Informazioni ed orari presso l’ufficio Pro Loco di canale d’Agordo.<br>A Falcade, presso il <a href=\"https://goo.gl/maps/9QVbzorkrWrdDQa89\" target=\"_blank\">Bar al Parco</a>, c’è un altro campo da ghiaccio all’aperto, con possibilità di noleggiopattini.<br>Per informazioni su orari e costi: Centro Fondo Falcade <a href=\"tel: 0437599441\">0437 599441</a> oppure <a href=\"tel: 3483942460\">348 3942460</a>.",
+    "inverno_cont_sx_4" : "A <span class=\"grassetto\">Canale d'Agordo</span>, <a href=\"https://goo.gl/maps/kG4FuSRUEDeN3dmt6in\" target=\"_blank\">via Lotta</a>, nella zona Parco giochi, viene solitamente allestito un campo da ghiaccio all’aperto, aperto sotto il periodo delle festività natalizie, con possibilità di noleggio pattini.<br>Informazioni ed orari presso l’ufficio Pro Loco di Canale d’Agordo.<br>A <span class=\"grassetto\">Falcade</span>, presso il <a href=\"https://goo.gl/maps/9QVbzorkrWrdDQa89\" target=\"_blank\">Bar al Parco</a>, c’è un altro campo da ghiaccio all’aperto, con possibilità di noleggio pattini.<br>Per informazioni su orari e costi: Centro Fondo Falcade <a href=\"tel: 0437599441\">0437 599441</a> oppure <a href=\"tel: 3483942460\">348 3942460</a>.",
 
     "inverno_sub_sx_5" : "<a href=\"?search=Noleggio\">Noleggi sci ed attrezzatura invernale (ciaspole, bastoncini etc.)</a>",
     "inverno_cont_sx_5" : "",
 
-    "inverno_titolo_dx" : "Informazioni utili",
-
-    "inverno_sub_dx_1" : "",
-    "inverno_cont_dx_1" : "",
+    "inverno_titolo_dx" : "",
     
     
     "paese_title" : "Il paese",
@@ -162,6 +159,6 @@
     "footer_dove_trovarci" : "Proloco Canale d'Agordo",
     "footer_come_contattarci" : "Come contattarci",
     "footer_orari_ufficio_titolo" : "Orari ufficio",
-    "footer_orari_ufficio" : "Tutti i giorni<br>9:00 - 12:30<br>15:30 - 18:30"
+    "footer_orari_ufficio" : "Venerd&igrave, Sabato e Domenica<br>9:00 - 12:00<br>15:00 - 18:00"
 
 }
