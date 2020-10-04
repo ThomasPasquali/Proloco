@@ -126,7 +126,8 @@
                             <a class="dropdown-item" href="?search=Garn%C3%AC,B%26B">Garn&igrave; e B&amp;B</a>
                             <a class="dropdown-item" href="?search=Albergo,Hotel"><?= $lang['menu_alloggi_hotel'] ?></a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="files/appartamenti.pdf" target="_blank"><?= $lang['menu_alloggi_appartamenti'] ?></a>
+                            <a class="dropdown-item" href="files/appartamenti_estate.pdf" target="_blank"><?= $lang['menu_alloggi_appartamenti_estate'] ?></a>
+                            <a class="dropdown-item" href="files/appartamenti_inverno.pdf" target="_blank"><?= $lang['menu_alloggi_appartamenti_inverno'] ?></a>
                         </div>
                     </li>
 
