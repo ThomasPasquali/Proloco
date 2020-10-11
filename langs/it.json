@@ -1,4 +1,4 @@
-﻿{
+{
     "menu_lang" : "Lingua",
     "menu_alloggi" : "Alloggi",
     "menu_alloggi_hotel" : "Hotel e Alberghi",
@@ -28,7 +28,7 @@
     "link_utili_impianti" : "Impianti di risalita",
     "link_utili_webcam" : "Webcam",
     "link_utili_comune" : "Comune di Canale d'Agordo",
-    
+
     
     "estate_titolo_sx" : "Attivit&agrave; estive",
 
@@ -85,7 +85,7 @@
     "inverno_cont_sx_1" : "Durante la stagione invernale la Valle del Biois offre un collegamento diretto con il <span class=\"grassetto\">Comprensorio sciistico Falcade- San Pellegrino</span>, attraverso gli impianti di risalita che partono dalla Località <span class=\"grassetto\">Molino di Falcade</span>.<br>A soli 20 km da Canale d'Agordo è possibile, inoltre, raggiungere la <span class=\"grassetto\">Ski Area Civetta</span>, punto di transito del Giro sciistico della Grande Guerra, mentre i collegamenti con la <span class=\"grassetto\">Marmolada</span> e <span class=\"grassetto\">Arabba</span> si trovano a circa una quarantina di minuti d'auto.<br>Di seguito alcune informazioni più specifiche a seconda dei Comprensori:<br><a href=\"https://www.skiareasanpellegrino.it/inverno/\" target=\"_blank\">Ski Area Falcade - San Pellegrino</a><br><a href=\"http://www.alleghefunivie.com/inverno/\" target=\"_blank\">Alleghe Funivie</a><br><a href=\"https://www.funiviemarmolada.com/skipass-dolomiti-superski/\" target=\"_blank\">Funivie Marmolada</a>",
 
     "inverno_sub_sx_2" : "Passeggiate ed escursioni",
-    "inverno_cont_sx_2" : "Anche d’inverno la Valle del Biois permette agli amanti dell’escursionismo di cimentarsi in passeggiate e camminate nel bosco, oppure in quota, lungo itinerari più o meno difficili che soddisfano tutte le esigenze.<br>Alcuni rifugi e malghe sono aperti solamente in estate, mentre altri anche d’inverno.<br>Quando la neve lo permette è, inoltre possibile percorrere alcuni tracciati muniti di  e bastoncini mentre, dove il fondo è ghiacciato, si consigliano i ramponcini. Il noleggio delle ciaspe è possibile presso la Capanna Cima Comelle o nei negozi sportivi di Falcade. <br>Consigliamo di rivolgersi ai nostri uffici informazione per farsi consigliare sui percorsi migliori da svolgere in inverno.<br>Nella lista dei  troverete coloro che hanno apertura annuale, estiva o invernale.",
+    "inverno_cont_sx_2" : "Anche d’inverno la Valle del Biois permette agli amanti dell’escursionismo di cimentarsi in passeggiate e camminate nel bosco, oppure in quota, lungo itinerari più o meno difficili che soddisfano tutte le esigenze.<br>Alcuni rifugi e malghe sono aperti solamente in estate, mentre altri anche d’inverno.<br>Quando la neve lo permette è, inoltre possibile percorrere alcuni tracciati muniti di <a href=\"files/ciaspe.pdf\" target=\"_blank\">racchette da neve (ciaspe)</a> e bastoncini mentre, dove il fondo è ghiacciato, si consigliano i ramponcini. Il noleggio delle ciaspe è possibile presso la Capanna Cima Comelle o nei negozi sportivi di Falcade. <br>Consigliamo di rivolgersi ai nostri uffici informazione per farsi consigliare sui percorsi migliori da svolgere in inverno.<br>Nella <a href=\"files/rifugi_inverno.pdf\" target=\"_blank\">lista dei rifugi</a> troverete coloro che hanno apertura annuale, estiva o invernale.",
 
     "inverno_sub_sx_3" : "Sci nordico",
     "inverno_cont_sx_3" : "In Valle del Biois vi sono due centri di rilievo per la pratica dello sci nordico: uno si trova a Canale d’Agordo, in fondo alla maestosa Valle di Garés. Un altro sulla Piana di Falcade.<br>Il primo, <span class=\"grassetto\">centro “Franco Manfroi”</span>, ha un tracciato che si snoda per 7,5 km con vari anelli intermedi di diverse difficoltà.<br>Per informazioni: Capanna Cima Comelle <a href=\"tel: 043760049\">0437 60049</a><br>Il secondo, dedicato a <span class=\"grassetto\">Pietro Scola</span>, è una pista articolata in tre livelli di difficoltà. Per informazioni: <a href=\"tel: 0437599441\">0437 599441</a> - <a href=\"tel: 3285644023\">328 5644023</a><img data-src=\"imgs/Home/Inverno/cartina_fondo_gares.jpg\"><img data-src=\"imgs/Home/Inverno/cartina_fondo_falcade.jpg\">",
