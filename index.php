@@ -358,10 +358,16 @@
                                 <p><?= $lang['eventi_descrizione_mercatini'] ?></p>
                             </div>
 
-			    <div class="evento">
+			                <div class="evento">
                                 <img data-src="imgs/Eventi/Papa.jpg"/>
                                 <h1><?= $lang['eventi_papa'] ?></h1>
                                 <p><?= $lang['eventi_descrizione_papa'] ?></p>
+                            </div>
+
+                            <div class="evento">
+                                <img data-src="https://www.prolocobellunesi.it/wp-content/uploads/2020/12/PRESEPE_CANALE_AGORDO-2020_Pagina_1-2048x1447.jpg"/>
+                                <h1><?= $lang['eventi_presepi'] ?></h1>
+                                <p><?= $lang['eventi_descrizione_presepi'] ?></p>
                             </div>
                             
                         </div>
